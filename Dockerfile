@@ -6,7 +6,3 @@ RUN git clone https://github.com/FrancoCabezasPoblete/resource-prediction-study
 
 # Set the working directory
 WORKDIR /resource-prediction-study
-
-# Install the requirements
-RUN apt-get install -y python3-pip
-RUN pip3 install -r requirements.txt
