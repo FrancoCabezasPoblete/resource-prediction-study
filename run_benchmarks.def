@@ -6,7 +6,7 @@ From: ubuntu:22.04
    apt-get -y install 
 
 %runscript
-   python3 main.py
+   .simulated_annealing/sa_bench instancia/InstanceBEP-1-4-2-4.txt 100 1000 1 5
 
 %labels
    Author Franco Cabezas

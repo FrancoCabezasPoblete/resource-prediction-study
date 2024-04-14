@@ -8,4 +8,4 @@ functions.o: functions.cpp functions.h
 	g++ -Wall -c functions.cpp
 
 clean:
-	rm *.o main solucion.txt
+	rm *.o sa_bench solucion.txt
