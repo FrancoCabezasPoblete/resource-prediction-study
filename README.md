@@ -13,7 +13,7 @@ Los benchmarks utilizados en el estudio son los siguientes:
 - Matrix Multiplication
 
 ## Dependencias
-- (apptainer)[https://apptainer.org/]
+- [apptainer](https://apptainer.org/)
 
 ## Build de contenedor
 ```bash
