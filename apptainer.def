@@ -4,16 +4,15 @@ From: python:3.10-slim
 %post
    apt-get update && apt-get install -y git ltrace strace make g++ 
    apt-get autoremove -y && apt-get clean
-   python3.10 -m venv /venv
    export PATH="/venv/bin:$PATH"
    pip install --no-cache-dir numpy icecream faker
    cd / && git clone https://github.com/FrancoCabezasPoblete/resource-prediction-study
    ls
    cd /resource-prediction-study/benchmarks/simulated_annealing && make && cd /resource-prediction-study
-   python /resource-prediction-study/benchmarks/sql_join/init_db.py 100 500
+   python /resource-prediction-study/benchmarks/sql_join/init_db.py 100 500 /resource-prediction-study/example.db
 %runscript
    python /resource-prediction-study/benchmarks/matrix_multiplication/main.py 1000
-   python /resource-prediction-study/benchmarks/sql_join/main.py
+   python /resource-prediction-study/benchmarks/sql_join/main.py /resource-prediction-study/example.db
    /resource-prediction-study/benchmarks/simulated_annealing/sa_bench instancia/InstanceBEP-1-4-2-4.txt 100 1000 1 5
 
 %labels

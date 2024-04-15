@@ -4,15 +4,15 @@ import sqlite3
 import random
 import sys
 
-if len(sys.argv) < 3:
-    ic("Usage: python main.py <n_customers:int> <n_orders:int>")
+if len(sys.argv) < 4:
+    ic("Usage: python main.py <n_customers:int> <n_orders:int> <path_db:string>")
     sys.exit(1)
 
 n_customers = int(float(sys.argv[1]))
 n_orders = int(float(sys.argv[2]))
 fake = Faker()
 # Connect to SQLite database
-conn = sqlite3.connect('example.db')
+conn = sqlite3.connect(sys.argv[3])
 cursor = conn.cursor()
 
 # Create tables

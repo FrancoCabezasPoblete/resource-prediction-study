@@ -1,9 +1,12 @@
 from icecream import ic
 import sqlite3
 import time
+import sys
 
-
-conn = sqlite3.connect('example.db')  # Create an in-memory database
+if len(sys.argv) < 2:
+    ic("Usage: python main.py <path_db:string>")
+    sys.exit(1)
+conn = sqlite3.connect(sys.argv[1])  # Create an in-memory database
 cursor = conn.cursor()
 
 queries = {
