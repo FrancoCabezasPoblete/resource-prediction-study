@@ -13,8 +13,7 @@ From: python:3.10-slim
 %runscript
    python /resource-prediction-study/benchmarks/matrix_multiplication/main.py 1000
    python /resource-prediction-study/benchmarks/sql_join/main.py /resource-prediction-study/example.db
-   /resource-prediction-study/benchmarks/simulated_annealing/sa_bench instancia/InstanceBEP-1-4-2-4.txt 100 1000 1 5
-
+   /resource-prediction-study/benchmarks/simulated_annealing/sa_bench /resource-prediction-study/benchmarks/simulated_annealing/instancias/InstanceBEP-1-4-2-4.txt 100 1000 1 5
 %labels
    Author Franco Cabezas
    Version v0.0.1
