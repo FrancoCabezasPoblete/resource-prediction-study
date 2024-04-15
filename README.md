@@ -25,7 +25,7 @@ apptainer build new_container.sif apptainer.def
 apptainer run new_container.sif
 ```
 
-## Descrición de los benchmarks
+## Descripción de los benchmarks
 ### Simulated Annealing
 Resuelve el problema *Bus Evacuation Problem* (BEP) usando el algoritmo de *Simulated Annealing*, dado una instancia del problema.
 
