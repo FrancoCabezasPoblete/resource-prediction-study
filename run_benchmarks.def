@@ -2,11 +2,10 @@ BootStrap: docker
 From: ubuntu:22.04
 
 %post
-   apt-get -y update
-   apt-get -y install 
-
+   cd /resource-prediction-study/benchmark/simulated_annealing && make
 %runscript
-   .simulated_annealing/sa_bench instancia/InstanceBEP-1-4-2-4.txt 100 1000 1 5
+   /resource-prediction-study/benchmark/simulated_annealing/sa_bench instancia/InstanceBEP-1-4-2-4.txt 100 1000 1 5
+   python /resource-prediction-study/benchmark/matrix_multiplication/main.py 1e8
 
 %labels
    Author Franco Cabezas
