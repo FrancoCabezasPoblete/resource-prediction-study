@@ -1,5 +1,5 @@
 main: main.o functions.o functions.h
-	g++ -Wall -g main.o functions.o -o sa_bench
+	g++ -Wall -O2 main.o functions.o -o sa_bench
 
 main.o: main.cpp
 	g++ -Wall -c main.cpp

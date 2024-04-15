@@ -3,9 +3,11 @@ From: ubuntu:22.04
 
 %post
    cd /resource-prediction-study/benchmark/simulated_annealing && make
+   python /resource-prediction-study/benchmark/sql_join/init_db.py
 %runscript
+   python /resource-prediction-study/benchmark/matrix_multiplication/main.py 1000
+   python /resource-prediction-study/benchmark/sql_join/main.py 100 500
    /resource-prediction-study/benchmark/simulated_annealing/sa_bench instancia/InstanceBEP-1-4-2-4.txt 100 1000 1 5
-   python /resource-prediction-study/benchmark/matrix_multiplication/main.py 1e8
 
 %labels
    Author Franco Cabezas
