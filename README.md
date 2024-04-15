@@ -15,9 +15,14 @@ Los benchmarks utilizados en el estudio son los siguientes:
 ## Dependencias
 - (apptainer)[https://apptainer.org/]
 
-## Ejecución y registro de los benchmarks
+## Build de contenedor
 ```bash
-apptainer run docker://frnk6655/resource-prediction-study:latest run_benchmarks.def
+apptainer build new_container.sif apptainer.def
+```
+
+## Ejecución de benchmarks
+```bash
+apptainer run new_container.sif
 ```
 
 ## Descrición de los benchmarks
