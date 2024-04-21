@@ -13,19 +13,19 @@ Los benchmarks utilizados en el estudio son los siguientes:
 - Matrix Multiplication
 
 ## Dependencias
-- (apptainer)[https://apptainer.org/]
+- [apptainer](https://apptainer.org/)
 
-## Ejecución y registro de los benchmarks
+## Build de contenedor
 ```bash
-apptainer run docker://frnk6655/resource-prediction-study:latest run_benchmarks.def
+apptainer build new_container.sif apptainer.def
 ```
 
-## Descrición de los benchmarks
-### Perf
-Realiza una serie de mediciones de rendimiento de la máquina objetivo usando la herramienta *perf*, los benchmarks ejecutados son:
-- syscall: System call benchmarks (basic, getpgid, fork, execve).
-- mem: Memory access benchmarks (memcpy, memset).
+## Ejecución de benchmarks
+```bash
+apptainer run new_container.sif
+```
 
+## Descripción de los benchmarks
 ### Simulated Annealing
 Resuelve el problema *Bus Evacuation Problem* (BEP) usando el algoritmo de *Simulated Annealing*, dado una instancia del problema.
 
