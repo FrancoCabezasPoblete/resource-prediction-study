@@ -21,6 +21,11 @@ apptainer run docker://frnk6655/resource-prediction-study:latest run_benchmarks.
 ```
 
 ## Descrición de los benchmarks
+### Perf
+Realiza una serie de mediciones de rendimiento de la máquina objetivo usando la herramienta *perf*, los benchmarks ejecutados son:
+- syscall: System call benchmarks (basic, getpgid, fork, execve).
+- mem: Memory access benchmarks (memcpy, memset).
+
 ### Simulated Annealing
 Resuelve el problema *Bus Evacuation Problem* (BEP) usando el algoritmo de *Simulated Annealing*, dado una instancia del problema.
 

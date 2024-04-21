@@ -2,10 +2,10 @@ BootStrap: docker
 From: python:3.10-slim
 
 %post
-   apt-get update && apt-get install -y git ltrace strace make g++ 
+   apt-get update && apt-get install -y git ltrace strace make g++ valgrind sysstat
    apt-get autoremove -y && apt-get clean
    export PATH="/venv/bin:$PATH"
-   pip install --no-cache-dir numpy icecream faker
+   pip install --no-cache-dir numpy icecream faker psutil
    cd / && git clone https://github.com/FrancoCabezasPoblete/resource-prediction-study
    ls
    cd /resource-prediction-study/benchmarks/simulated_annealing && make && cd /resource-prediction-study

@@ -4,15 +4,16 @@
 using namespace std;
 
 void printSolution(Instance instance, Solution solution, int executionTime){
-    fstream solFile;
-    solFile.open("solucion.txt", ios_base::app | ios_base::in);
+    //fstream solFile;
+    //solFile.open("solucion.txt", ios_base::app | ios_base::in);
     
     cout << "Solución Final:\n";
-    solFile << "Solución Final:\n";
+    //solFile << "Solución Final:\n";
     
     cout << "Duración total de la evacuación: " << solution.busDist[solution.busByTrips[instance.B-1]] << endl;
-    solFile << "Duración total de la evacuación: " << solution.busDist[solution.busByTrips[instance.B-1]] << endl;
+    //solFile << "Duración total de la evacuación: " << solution.busDist[solution.busByTrips[instance.B-1]] << endl;
     
+    /*
     solFile << endl << "Trip nr.|\t";
     // Encontrar la máxima cantidad de viajes
     int maxTrips = 0;
@@ -40,10 +41,11 @@ void printSolution(Instance instance, Solution solution, int executionTime){
     solFile << endl << "Cantidad de personas en: " << endl;
     for(int i = 0; i < instance.R; i++)
         solFile << "Refugio " << i+1 << ": " << instance.personasRefugio[i] << endl;
+    */
     cout << endl << "Tiempo de ejecución total: " << executionTime << "[us]\n";
-    solFile << endl << "Tiempo de ejecución total: " << executionTime << "[us]\n";
+    //solFile << endl << "Tiempo de ejecución total: " << executionTime << "[us]\n";
     
-    solFile.close();
+    //solFile.close();
 }
 
 Instance initInstance(string file){
