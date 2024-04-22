@@ -233,10 +233,10 @@ pair<Solution,Instance> initFeasibleSolution(Instance instance){
         }
     }
 
-    ofstream solFile("solucion.txt");
+    //ofstream solFile("solucion.txt");
     cout << "Duración total de la evacuación inicial: " << solution.busDist[solution.busByTrips[instance.B-1]] << endl << endl;
-    solFile << "Duración total de la evacuación inicial: " << solution.busDist[solution.busByTrips[instance.B-1]] << endl << endl;
-    solFile.close();
+    //solFile << "Duración total de la evacuación inicial: " << solution.busDist[solution.busByTrips[instance.B-1]] << endl << endl;
+    //solFile.close();
 
     return make_pair(solution,instance);
 }
