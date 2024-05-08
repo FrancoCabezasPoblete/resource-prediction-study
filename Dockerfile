@@ -20,6 +20,5 @@ ENV SA_INSTANCES=/benchmarks/simulated_annealing/instancias
 
 RUN chmod +x /run_benchmarks.sh
 RUN cd /benchmarks/simulated_annealing && make
-RUN python /benchmarks/sql_join/init_db.py 1000 5000 /src/example.db
 
 ENTRYPOINT ["bash","/run_benchmarks.sh"]

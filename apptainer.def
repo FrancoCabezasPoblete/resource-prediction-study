@@ -12,7 +12,6 @@ From: python:3.10-slim
    apt-get autoremove -y && apt-get clean
    pip install --no-cache-dir -r /src/requirements.txt
    cd /benchmarks/simulated_annealing && make && cd /src
-   python /benchmarks/sql_join/init_db.py 1000 5000 /src/example.db
    chmod +x /run_benchmarks.sh
 %runscript
    /run_benchmarks.sh
