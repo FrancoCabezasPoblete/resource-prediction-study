@@ -1,18 +1,22 @@
 BootStrap: docker
 From: python:3.10-slim
 
+%files
+   ./benchmarks /benchmarks
+   ./src /src
+   ./run_benchmarks.sh /run_benchmarks.sh
+%environment
+   export SA_INSTANCES=/benchmarks/simulated_annealing/instancias
 %post
-   apt-get update && apt-get install -y git ltrace strace make g++ valgrind sysstat
+   apt-get update && apt-get install -y git ltrace strace make g++ valgrind sysstat time
    apt-get autoremove -y && apt-get clean
-   export PATH="/venv/bin:$PATH"
-   pip install --no-cache-dir numpy icecream faker psutil
-   cd / && git clone https://github.com/FrancoCabezasPoblete/resource-prediction-study
-   cd /resource-prediction-study/benchmarks/simulated_annealing && make && cd /resource-prediction-study
-   python /resource-prediction-study/benchmarks/sql_join/init_db.py 100 500 /resource-prediction-study/example.db
+   pip install --no-cache-dir -r /src/requirements.txt
+   cd /benchmarks/simulated_annealing && make && cd /src
+   python /benchmarks/sql_join/init_db.py 1000 5000 /src/example.db
+   chmod +x /run_benchmarks.sh
 %runscript
-   python /resource-prediction-study/src/main.py results/matrix_multiplication python /resource-prediction-study/benchmarks/matrix_multiplication/main.py 1000
-   python /resource-prediction-study/src/main.py results/sql_join python /resource-prediction-study/benchmarks/sql_join/main.py /resource-prediction-study/example.db
-   python /resource-prediction-study/src/main.py results/simulated_annealing /resource-prediction-study/benchmarks/simulated_annealing/sa_bench /resource-prediction-study/benchmarks/simulated_annealing/instancias/InstanceBEP-8-40-20-20.txt 100 1000 1 5
+   /run_benchmarks.sh
+
 %labels
    Author Franco Cabezas
    Version v0.0.1

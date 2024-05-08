@@ -13,16 +13,28 @@ Los benchmarks utilizados en el estudio son los siguientes:
 - Matrix Multiplication
 
 ## Dependencias
-- [apptainer](https://apptainer.org/)
+- [apptainer](https://apptainer.org/) o [Docker](https://www.docker.com/)
 
-## Build de contenedor
+## Apptainer
+### Build de contenedor con apptainer
 ```bash
 apptainer build new_container.sif apptainer.def
 ```
 
-## Ejecución de benchmarks
+### Ejecución de benchmarks
 ```bash
 apptainer run new_container.sif
+```
+
+## Docker
+### Build de contenedor con Docker
+```bash
+docker build -t new_container .
+```
+
+### Ejecución de benchmarks
+```bash
+docker run -it -v ./results:/results new_container
 ```
 
 ## Descripción de los benchmarks
@@ -34,3 +46,24 @@ Realiza una operación de *join* entre dos tablas de una base de datos SQL, dado
 
 ### Matrix Multiplication
 Realiza la multiplicación de dos matrices cuadradas de tamaño *n x n*, dado un valor de *n*.
+
+## Métricas de evaluación
+Las métricas de evaluación utilizadas en el estudio son las siguientes:
+- strace:
+  - Llamadas al sistema
+- time:
+  - Tiempo de ejecución
+  - Porcentaje de CPU utilizado
+  - Máximo uso de RAM
+  - Cantidad de veces que el proceso fue intercambiado hacia afuera de la RAM
+- Registrados en ejecución:
+  - Uso de CPU
+  - Uso de memoria
+
+Además, se recopila la información disponible del sistema como:
+- Arquitectura
+- Nombre de la CPU
+- Frecuencia de la CPU
+- Tamaño de cache L2 de CPU
+- Tamaño de cache L3 de CPU
+- Tamaño total de RAM
