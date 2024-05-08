@@ -162,4 +162,3 @@ cython_debug/
 *.db
 *.sif
 temp_*
-results/
