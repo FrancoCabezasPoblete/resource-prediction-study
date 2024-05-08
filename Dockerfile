@@ -22,4 +22,4 @@ RUN chmod +x /run_benchmarks.sh
 RUN cd /benchmarks/simulated_annealing && make
 RUN python /benchmarks/sql_join/init_db.py 1000 5000 /src/example.db
 
-ENTRYPOINT ["/run_benchmarks.sh"]
+ENTRYPOINT ["bash","/run_benchmarks.sh"]
