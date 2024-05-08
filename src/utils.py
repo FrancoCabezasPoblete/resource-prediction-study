@@ -39,7 +39,6 @@ def execution_time(command, iterations=1):
 
 def pc_info():
     info = get_cpu_info()
-    ram = psutil.virtual_memory()
     return {
         'brand_raw': info['brand_raw'],
         'vendor_id_raw': info['vendor_id_raw'],
@@ -51,5 +50,4 @@ def pc_info():
         'hz_advertised_friendly': info['hz_advertised_friendly'],
         'l2_cache_line_size': info['l2_cache_line_size'],
         'l2_cache_associativity': info['l2_cache_associativity'],
-        'total_ram_gb': ram.total / (1024 ** 3)
     }
