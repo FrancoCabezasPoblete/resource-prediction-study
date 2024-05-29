@@ -33,7 +33,7 @@ def execution_time(command, iterations=1):
     execution_times = []
     time_format = "%e, %P, %K, %M, %W"
     for _ in range(iterations):
-        result = subprocess.run(["/bin/time", "-f", time_format, *command], text=True, capture_output=True)
+        result = subprocess.run(["usr/bin/time", "-f", time_format, *command], text=True, capture_output=True)
         execution_times.append(result.stderr)
     return execution_times
 

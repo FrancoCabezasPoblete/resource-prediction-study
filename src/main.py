@@ -60,7 +60,7 @@ print_std(stdout, stderr)
 #         cpu_df.to_csv(os.path.join("results", "cpu_usage.csv"), index=False)
 # print_std(stdout, stderr)
 
-exec_times = execution_time(args.command, 100)
+exec_times = execution_time(args.command, 5)
 columns = ["total_time", "total_cpu_usage", "total_memory_usage", "max_ram_usage", "swaps"]
 exec_times = [record.strip().split(", ") for record in exec_times]
 exec_times = pd.DataFrame(exec_times, columns=columns)
