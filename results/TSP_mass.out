@@ -1,0 +1,1339 @@
+desc: --massif-out-file=results/TSP_mass.out
+cmd: /benchmarks/build/tsp
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2305740122
+mem_heap_B=16059005
+mem_heap_extra_B=338651
+mem_stacks_B=0
+heap_tree=detailed
+n14: 16059005 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 5958349 in 590 places, all below massif's threshold (1.00%)
+ n1: 4904712 0x126A1D: __gnu_cxx::new_allocator<long>::allocate(unsigned long, void const*) (in /benchmarks/build/tsp)
+  n1: 4904712 0x126540: std::allocator_traits<std::allocator<long> >::allocate(std::allocator<long>&, unsigned long) (in /benchmarks/build/tsp)
+   n1: 4904712 0x125E0F: std::_Vector_base<long, std::allocator<long> >::_M_allocate(unsigned long) (in /benchmarks/build/tsp)
+    n1: 4904712 0x125D3E: std::_Vector_base<long, std::allocator<long> >::_M_create_storage(unsigned long) (in /benchmarks/build/tsp)
+     n2: 4904712 0x12524A: std::_Vector_base<long, std::allocator<long> >::_Vector_base(unsigned long, std::allocator<long> const&) (in /benchmarks/build/tsp)
+      n1: 4904712 0x12471B: std::vector<long, std::allocator<long> >::vector(std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+       n1: 4904712 0x12714A: void std::_Construct<std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > const&>(std::vector<long, std::allocator<long> >*, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+        n1: 4904712 0x126E17: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+         n1: 4904712 0x12693D: std::vector<long, std::allocator<long> >* std::uninitialized_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+          n1: 4904712 0x126450: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n_a<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > >&) (in /benchmarks/build/tsp)
+           n1: 4904712 0x125BDB: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::_M_fill_initialize(unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+            n1: 4904712 0x124FB5: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::vector(unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > > const&) (in /benchmarks/build/tsp)
+             n1: 4904712 0x10A3CE: operations_research::ComputeEuclideanDistanceMatrix(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&) (in /benchmarks/build/tsp)
+              n1: 4904712 0x10A7C9: operations_research::Tsp() (in /benchmarks/build/tsp)
+               n0: 4904712 0x10A962: main (in /benchmarks/build/tsp)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n4: 808896 0x4F7D8A6: std::vector<long, std::allocator<long> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A535E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A546E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A5486: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 151176 in 9 places, all below massif's threshold (1.00%)
+ n2: 601472 0x4FAC5FA: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 350816 in 6 places, all below massif's threshold (1.00%)
+  n1: 250656 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n0: 250656 in 3 places, all below massif's threshold (1.00%)
+ n1: 557192 0x4FAA4DF: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 16ul, true, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 557192 0x4FB3FFB: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::IntVar const*, int>, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Eq, std::allocator<std::pair<operations_research::IntVar const* const, int> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 400472 0x4FACF42: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 226336 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n0: 226336 in 3 places, all below massif's threshold (1.00%)
+    n0: 174136 in 5 places, all below massif's threshold (1.00%)
+   n0: 156720 in 1 place, below massif's threshold (1.00%)
+ n3: 551832 0x50A4C62: std::vector<long, std::allocator<long> >::_M_fill_insert(__gnu_cxx::__normal_iterator<long*, std::vector<long, std::allocator<long> > >, unsigned long, long const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219520 0x50A54A6: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n1: 219520 0x50A54C7: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n0: 112792 in 6 places, all below massif's threshold (1.00%)
+ n1: 501120 0x5140CEE: std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 501120 0x51D5933: operations_research::IntVarFilteredHeuristic::IntVarFilteredHeuristic(operations_research::Solver*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 501120 0x51D5BDF: operations_research::RoutingFilteredHeuristic::RoutingFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 375840 0x51D5D76: operations_research::CheapestInsertionFilteredHeuristic::CheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 200448 0x51D5F10: operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*, operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 200448 in 3 places, all below massif's threshold (1.00%)
+     n1: 175392 0x51D62EA: operations_research::LocalCheapestInsertionFilteredHeuristic::LocalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, operations_research::RoutingSearchParameters_PairInsertionStrategy, operations_research::LocalSearchFilterManager*, operations_research::BinCapacities*, std::function<bool (std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> > const&, std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> >*)>) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 175392 in 4 places, all below massif's threshold (1.00%)
+    n0: 125280 in 3 places, all below massif's threshold (1.00%)
+ n3: 451296 0x504FEC3: operations_research::Solver::MakeIntVar(long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 225504 0x50501E5: operations_research::Solver::MakeIntVar(long, long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x51001B4: operations_research::RoutingModel::AppendHomogeneousArcCosts(operations_research::RoutingSearchParameters const&, int, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x5122D3C: operations_research::RoutingModel::CloseModelWithParameters(operations_research::RoutingSearchParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512E99A: operations_research::RoutingModel::SolveFromAssignmentsWithParameters(std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> > const&, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x512F5D6: operations_research::RoutingModel::SolveFromAssignmentWithParameters(operations_research::Assignment const*, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 225504 0x10A877: operations_research::Tsp() (in /benchmarks/build/tsp)
+        n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n1: 225504 0x5056CC7: operations_research::Solver::MakeIntVarArray(int, long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x50FE516: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+       n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n0: 288 in 1 place, below massif's threshold (1.00%)
+ n2: 377024 0x4FB3D0B: void std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_realloc_insert<operations_research::IntVar*&>(__gnu_cxx::__normal_iterator<operations_research::IntVarElement*, std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> > >, operations_research::IntVar*&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 327680 0x4FAE60F: operations_research::Assignment::Add(operations_research::IntVar*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 294912 0x4FAE646: operations_research::Assignment::Add(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 294912 in 7 places, all below massif's threshold (1.00%)
+   n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 49344 in 1 place, below massif's threshold (1.00%)
+ n1: 335856 0x4FC4C9A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 335856 0x4FCAF8E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 335856 0x4FCB275: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 335856 0x4FC273C: operations_research::Solver::SetName(operations_research::PropagationBaseObject const*, std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 335856 0x50473A5: operations_research::Solver::MakeBoolVar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 335856 0x5056F3D: operations_research::Solver::MakeBoolVarArray(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 335856 0x50FE75B: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 335856 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 335856 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 335856 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+           n0: 335856 0x10A962: main (in /benchmarks/build/tsp)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 319464 0x507C1E9: void std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >::_M_range_insert<__gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > > >(__gnu_cxx::__normal_iterator<operations_research::IntVar**, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, std::forward_iterator_tag) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A4E18: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 100224 in 2 places, all below massif's threshold (1.00%)
+ n1: 263424 0x50A9ED6: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 263424 in 2 places, all below massif's threshold (1.00%)
+ n1: 219240 0x509AD37: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 219240 in 19 places, all below massif's threshold (1.00%)
+ n1: 209128 0x4F2B9F2: std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 209128 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=5413259443
+mem_heap_B=16009797
+mem_heap_extra_B=338635
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=7689203324
+mem_heap_B=16042629
+mem_heap_extra_B=338659
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=10944755341
+mem_heap_B=16034325
+mem_heap_extra_B=339027
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=14101187609
+mem_heap_B=16042629
+mem_heap_extra_B=338675
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=16247605018
+mem_heap_B=16059005
+mem_heap_extra_B=338619
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=17793196048
+mem_heap_B=16026245
+mem_heap_extra_B=338643
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=21110061355
+mem_heap_B=16026245
+mem_heap_extra_B=338643
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=24348772948
+mem_heap_B=16042629
+mem_heap_extra_B=338627
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=27019022395
+mem_heap_B=16059005
+mem_heap_extra_B=338619
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=29104970359
+mem_heap_B=16059005
+mem_heap_extra_B=338651
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=31589460002
+mem_heap_B=16042629
+mem_heap_extra_B=338659
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=34143023569
+mem_heap_B=16059005
+mem_heap_extra_B=338651
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=37589688921
+mem_heap_B=16026245
+mem_heap_extra_B=338659
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=40197237043
+mem_heap_B=16026245
+mem_heap_extra_B=338691
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=41725952333
+mem_heap_B=16059005
+mem_heap_extra_B=338683
+mem_stacks_B=0
+heap_tree=detailed
+n14: 16059005 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 5958349 in 590 places, all below massif's threshold (1.00%)
+ n1: 4904712 0x126A1D: __gnu_cxx::new_allocator<long>::allocate(unsigned long, void const*) (in /benchmarks/build/tsp)
+  n1: 4904712 0x126540: std::allocator_traits<std::allocator<long> >::allocate(std::allocator<long>&, unsigned long) (in /benchmarks/build/tsp)
+   n1: 4904712 0x125E0F: std::_Vector_base<long, std::allocator<long> >::_M_allocate(unsigned long) (in /benchmarks/build/tsp)
+    n1: 4904712 0x125D3E: std::_Vector_base<long, std::allocator<long> >::_M_create_storage(unsigned long) (in /benchmarks/build/tsp)
+     n2: 4904712 0x12524A: std::_Vector_base<long, std::allocator<long> >::_Vector_base(unsigned long, std::allocator<long> const&) (in /benchmarks/build/tsp)
+      n1: 4904712 0x12471B: std::vector<long, std::allocator<long> >::vector(std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+       n1: 4904712 0x12714A: void std::_Construct<std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > const&>(std::vector<long, std::allocator<long> >*, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+        n1: 4904712 0x126E17: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+         n1: 4904712 0x12693D: std::vector<long, std::allocator<long> >* std::uninitialized_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+          n1: 4904712 0x126450: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n_a<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > >&) (in /benchmarks/build/tsp)
+           n1: 4904712 0x125BDB: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::_M_fill_initialize(unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+            n1: 4904712 0x124FB5: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::vector(unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > > const&) (in /benchmarks/build/tsp)
+             n1: 4904712 0x10A3CE: operations_research::ComputeEuclideanDistanceMatrix(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&) (in /benchmarks/build/tsp)
+              n1: 4904712 0x10A7C9: operations_research::Tsp() (in /benchmarks/build/tsp)
+               n0: 4904712 0x10A962: main (in /benchmarks/build/tsp)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n4: 808896 0x4F7D8A6: std::vector<long, std::allocator<long> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A535E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A546E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A5486: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 151176 in 9 places, all below massif's threshold (1.00%)
+ n2: 601472 0x4FAC5FA: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 350816 in 6 places, all below massif's threshold (1.00%)
+  n1: 250656 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n0: 250656 in 3 places, all below massif's threshold (1.00%)
+ n1: 557192 0x4FAA4DF: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 16ul, true, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 557192 0x4FB3FFB: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::IntVar const*, int>, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Eq, std::allocator<std::pair<operations_research::IntVar const* const, int> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 400472 0x4FACF42: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 226336 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n0: 226336 in 3 places, all below massif's threshold (1.00%)
+    n0: 174136 in 5 places, all below massif's threshold (1.00%)
+   n0: 156720 in 1 place, below massif's threshold (1.00%)
+ n3: 551832 0x50A4C62: std::vector<long, std::allocator<long> >::_M_fill_insert(__gnu_cxx::__normal_iterator<long*, std::vector<long, std::allocator<long> > >, unsigned long, long const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219520 0x50A54A6: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n1: 219520 0x50A54C7: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n0: 112792 in 6 places, all below massif's threshold (1.00%)
+ n1: 501120 0x5140CEE: std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 501120 0x51D5933: operations_research::IntVarFilteredHeuristic::IntVarFilteredHeuristic(operations_research::Solver*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 501120 0x51D5BDF: operations_research::RoutingFilteredHeuristic::RoutingFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 375840 0x51D5D76: operations_research::CheapestInsertionFilteredHeuristic::CheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 200448 0x51D5F10: operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*, operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 200448 in 3 places, all below massif's threshold (1.00%)
+     n1: 175392 0x51D62EA: operations_research::LocalCheapestInsertionFilteredHeuristic::LocalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, operations_research::RoutingSearchParameters_PairInsertionStrategy, operations_research::LocalSearchFilterManager*, operations_research::BinCapacities*, std::function<bool (std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> > const&, std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> >*)>) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 175392 in 4 places, all below massif's threshold (1.00%)
+    n0: 125280 in 3 places, all below massif's threshold (1.00%)
+ n3: 451296 0x504FEC3: operations_research::Solver::MakeIntVar(long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 225504 0x50501E5: operations_research::Solver::MakeIntVar(long, long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x51001B4: operations_research::RoutingModel::AppendHomogeneousArcCosts(operations_research::RoutingSearchParameters const&, int, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x5122D3C: operations_research::RoutingModel::CloseModelWithParameters(operations_research::RoutingSearchParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512E99A: operations_research::RoutingModel::SolveFromAssignmentsWithParameters(std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> > const&, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x512F5D6: operations_research::RoutingModel::SolveFromAssignmentWithParameters(operations_research::Assignment const*, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 225504 0x10A877: operations_research::Tsp() (in /benchmarks/build/tsp)
+        n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n1: 225504 0x5056CC7: operations_research::Solver::MakeIntVarArray(int, long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x50FE516: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+       n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n0: 288 in 1 place, below massif's threshold (1.00%)
+ n2: 377024 0x4FB3D0B: void std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_realloc_insert<operations_research::IntVar*&>(__gnu_cxx::__normal_iterator<operations_research::IntVarElement*, std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> > >, operations_research::IntVar*&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 327680 0x4FAE60F: operations_research::Assignment::Add(operations_research::IntVar*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 294912 0x4FAE646: operations_research::Assignment::Add(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 294912 in 7 places, all below massif's threshold (1.00%)
+   n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 49344 in 1 place, below massif's threshold (1.00%)
+ n1: 335856 0x4FC4C9A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 335856 0x4FCAF8E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 335856 0x4FCB275: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 335856 0x4FC273C: operations_research::Solver::SetName(operations_research::PropagationBaseObject const*, std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 335856 0x50473A5: operations_research::Solver::MakeBoolVar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 335856 0x5056F3D: operations_research::Solver::MakeBoolVarArray(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 335856 0x50FE75B: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 335856 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 335856 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 335856 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+           n0: 335856 0x10A962: main (in /benchmarks/build/tsp)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 319464 0x507C1E9: void std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >::_M_range_insert<__gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > > >(__gnu_cxx::__normal_iterator<operations_research::IntVar**, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, std::forward_iterator_tag) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A4E18: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 100224 in 2 places, all below massif's threshold (1.00%)
+ n1: 263424 0x50A9ED6: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 263424 in 2 places, all below massif's threshold (1.00%)
+ n1: 219240 0x509AD37: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 219240 in 19 places, all below massif's threshold (1.00%)
+ n1: 209128 0x4F2B9F2: std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 209128 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=44219887009
+mem_heap_B=16042629
+mem_heap_extra_B=338659
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=49186889406
+mem_heap_B=16042629
+mem_heap_extra_B=338691
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=49216796467
+mem_heap_B=16034429
+mem_heap_extra_B=338651
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=53948753061
+mem_heap_B=16042629
+mem_heap_extra_B=338659
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=55885510378
+mem_heap_B=16042629
+mem_heap_extra_B=338659
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=59728862519
+mem_heap_B=16026245
+mem_heap_extra_B=338691
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=60953862331
+mem_heap_B=16059005
+mem_heap_extra_B=338683
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=63986161672
+mem_heap_B=16042629
+mem_heap_extra_B=338691
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=67353313428
+mem_heap_B=16042629
+mem_heap_extra_B=338659
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=69716227046
+mem_heap_B=16042629
+mem_heap_extra_B=338659
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=72369222853
+mem_heap_B=16059005
+mem_heap_extra_B=338651
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=80089222079
+mem_heap_B=16042629
+mem_heap_extra_B=338659
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=80119298395
+mem_heap_B=16034429
+mem_heap_extra_B=338651
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=99194602010
+mem_heap_B=16042629
+mem_heap_extra_B=338659
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=101326447730
+mem_heap_B=16026405
+mem_heap_extra_B=338715
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=103454992451
+mem_heap_B=16026405
+mem_heap_extra_B=338715
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=105789125928
+mem_heap_B=16026405
+mem_heap_extra_B=338731
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=107450354076
+mem_heap_B=16026405
+mem_heap_extra_B=338731
+mem_stacks_B=0
+heap_tree=detailed
+n14: 16026405 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 5974901 in 590 places, all below massif's threshold (1.00%)
+ n1: 4904712 0x126A1D: __gnu_cxx::new_allocator<long>::allocate(unsigned long, void const*) (in /benchmarks/build/tsp)
+  n1: 4904712 0x126540: std::allocator_traits<std::allocator<long> >::allocate(std::allocator<long>&, unsigned long) (in /benchmarks/build/tsp)
+   n1: 4904712 0x125E0F: std::_Vector_base<long, std::allocator<long> >::_M_allocate(unsigned long) (in /benchmarks/build/tsp)
+    n1: 4904712 0x125D3E: std::_Vector_base<long, std::allocator<long> >::_M_create_storage(unsigned long) (in /benchmarks/build/tsp)
+     n2: 4904712 0x12524A: std::_Vector_base<long, std::allocator<long> >::_Vector_base(unsigned long, std::allocator<long> const&) (in /benchmarks/build/tsp)
+      n1: 4904712 0x12471B: std::vector<long, std::allocator<long> >::vector(std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+       n1: 4904712 0x12714A: void std::_Construct<std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > const&>(std::vector<long, std::allocator<long> >*, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+        n1: 4904712 0x126E17: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+         n1: 4904712 0x12693D: std::vector<long, std::allocator<long> >* std::uninitialized_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+          n1: 4904712 0x126450: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n_a<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > >&) (in /benchmarks/build/tsp)
+           n1: 4904712 0x125BDB: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::_M_fill_initialize(unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+            n1: 4904712 0x124FB5: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::vector(unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > > const&) (in /benchmarks/build/tsp)
+             n1: 4904712 0x10A3CE: operations_research::ComputeEuclideanDistanceMatrix(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&) (in /benchmarks/build/tsp)
+              n1: 4904712 0x10A7C9: operations_research::Tsp() (in /benchmarks/build/tsp)
+               n0: 4904712 0x10A962: main (in /benchmarks/build/tsp)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n4: 808896 0x4F7D8A6: std::vector<long, std::allocator<long> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A535E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A546E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A5486: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 151176 in 9 places, all below massif's threshold (1.00%)
+ n2: 601472 0x4FAC5FA: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 350816 in 6 places, all below massif's threshold (1.00%)
+  n1: 250656 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n0: 250656 in 3 places, all below massif's threshold (1.00%)
+ n1: 557192 0x4FAA4DF: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 16ul, true, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 557192 0x4FB3FFB: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::IntVar const*, int>, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Eq, std::allocator<std::pair<operations_research::IntVar const* const, int> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 400472 0x4FACF42: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 226336 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n0: 226336 in 3 places, all below massif's threshold (1.00%)
+    n0: 174136 in 5 places, all below massif's threshold (1.00%)
+   n0: 156720 in 1 place, below massif's threshold (1.00%)
+ n3: 551832 0x50A4C62: std::vector<long, std::allocator<long> >::_M_fill_insert(__gnu_cxx::__normal_iterator<long*, std::vector<long, std::allocator<long> > >, unsigned long, long const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219520 0x50A54A6: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n1: 219520 0x50A54C7: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n0: 112792 in 6 places, all below massif's threshold (1.00%)
+ n1: 501120 0x5140CEE: std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 501120 0x51D5933: operations_research::IntVarFilteredHeuristic::IntVarFilteredHeuristic(operations_research::Solver*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 501120 0x51D5BDF: operations_research::RoutingFilteredHeuristic::RoutingFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 375840 0x51D5D76: operations_research::CheapestInsertionFilteredHeuristic::CheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 200448 0x51D5F10: operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*, operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 200448 in 3 places, all below massif's threshold (1.00%)
+     n1: 175392 0x51D62EA: operations_research::LocalCheapestInsertionFilteredHeuristic::LocalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, operations_research::RoutingSearchParameters_PairInsertionStrategy, operations_research::LocalSearchFilterManager*, operations_research::BinCapacities*, std::function<bool (std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> > const&, std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> >*)>) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 175392 in 4 places, all below massif's threshold (1.00%)
+    n0: 125280 in 3 places, all below massif's threshold (1.00%)
+ n3: 451296 0x504FEC3: operations_research::Solver::MakeIntVar(long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 225504 0x50501E5: operations_research::Solver::MakeIntVar(long, long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x51001B4: operations_research::RoutingModel::AppendHomogeneousArcCosts(operations_research::RoutingSearchParameters const&, int, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x5122D3C: operations_research::RoutingModel::CloseModelWithParameters(operations_research::RoutingSearchParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512E99A: operations_research::RoutingModel::SolveFromAssignmentsWithParameters(std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> > const&, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x512F5D6: operations_research::RoutingModel::SolveFromAssignmentWithParameters(operations_research::Assignment const*, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 225504 0x10A877: operations_research::Tsp() (in /benchmarks/build/tsp)
+        n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n1: 225504 0x5056CC7: operations_research::Solver::MakeIntVarArray(int, long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x50FE516: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+       n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n0: 288 in 1 place, below massif's threshold (1.00%)
+ n1: 335856 0x4FC4C9A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 335856 0x4FCAF8E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 335856 0x4FCB275: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 335856 0x4FC273C: operations_research::Solver::SetName(operations_research::PropagationBaseObject const*, std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 335856 0x50473A5: operations_research::Solver::MakeBoolVar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 335856 0x5056F3D: operations_research::Solver::MakeBoolVarArray(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 335856 0x50FE75B: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 335856 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 335856 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 335856 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+           n0: 335856 0x10A962: main (in /benchmarks/build/tsp)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 327872 0x4FB3D0B: void std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_realloc_insert<operations_research::IntVar*&>(__gnu_cxx::__normal_iterator<operations_research::IntVarElement*, std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> > >, operations_research::IntVar*&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 327680 0x4FAE60F: operations_research::Assignment::Add(operations_research::IntVar*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 294912 0x4FAE646: operations_research::Assignment::Add(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 294912 in 7 places, all below massif's threshold (1.00%)
+   n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 192 in 1 place, below massif's threshold (1.00%)
+ n2: 319464 0x507C1E9: void std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >::_M_range_insert<__gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > > >(__gnu_cxx::__normal_iterator<operations_research::IntVar**, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, std::forward_iterator_tag) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A4E18: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 100224 in 2 places, all below massif's threshold (1.00%)
+ n1: 263424 0x50A9ED6: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 263424 in 2 places, all below massif's threshold (1.00%)
+ n1: 219240 0x509AD37: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 219240 in 19 places, all below massif's threshold (1.00%)
+ n1: 209128 0x4F2B9F2: std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 209128 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=109342026697
+mem_heap_B=16042949
+mem_heap_extra_B=338763
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=111011302226
+mem_heap_B=16042949
+mem_heap_extra_B=338763
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=113625470550
+mem_heap_B=16042949
+mem_heap_extra_B=338747
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=115721745480
+mem_heap_B=16042949
+mem_heap_extra_B=338747
+mem_stacks_B=0
+heap_tree=detailed
+n14: 16042949 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 5991445 in 590 places, all below massif's threshold (1.00%)
+ n1: 4904712 0x126A1D: __gnu_cxx::new_allocator<long>::allocate(unsigned long, void const*) (in /benchmarks/build/tsp)
+  n1: 4904712 0x126540: std::allocator_traits<std::allocator<long> >::allocate(std::allocator<long>&, unsigned long) (in /benchmarks/build/tsp)
+   n1: 4904712 0x125E0F: std::_Vector_base<long, std::allocator<long> >::_M_allocate(unsigned long) (in /benchmarks/build/tsp)
+    n1: 4904712 0x125D3E: std::_Vector_base<long, std::allocator<long> >::_M_create_storage(unsigned long) (in /benchmarks/build/tsp)
+     n2: 4904712 0x12524A: std::_Vector_base<long, std::allocator<long> >::_Vector_base(unsigned long, std::allocator<long> const&) (in /benchmarks/build/tsp)
+      n1: 4904712 0x12471B: std::vector<long, std::allocator<long> >::vector(std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+       n1: 4904712 0x12714A: void std::_Construct<std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > const&>(std::vector<long, std::allocator<long> >*, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+        n1: 4904712 0x126E17: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+         n1: 4904712 0x12693D: std::vector<long, std::allocator<long> >* std::uninitialized_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+          n1: 4904712 0x126450: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n_a<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > >&) (in /benchmarks/build/tsp)
+           n1: 4904712 0x125BDB: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::_M_fill_initialize(unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+            n1: 4904712 0x124FB5: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::vector(unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > > const&) (in /benchmarks/build/tsp)
+             n1: 4904712 0x10A3CE: operations_research::ComputeEuclideanDistanceMatrix(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&) (in /benchmarks/build/tsp)
+              n1: 4904712 0x10A7C9: operations_research::Tsp() (in /benchmarks/build/tsp)
+               n0: 4904712 0x10A962: main (in /benchmarks/build/tsp)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n4: 808896 0x4F7D8A6: std::vector<long, std::allocator<long> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A535E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A546E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A5486: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 151176 in 9 places, all below massif's threshold (1.00%)
+ n2: 601472 0x4FAC5FA: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 350816 in 6 places, all below massif's threshold (1.00%)
+  n1: 250656 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n0: 250656 in 3 places, all below massif's threshold (1.00%)
+ n1: 557192 0x4FAA4DF: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 16ul, true, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 557192 0x4FB3FFB: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::IntVar const*, int>, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Eq, std::allocator<std::pair<operations_research::IntVar const* const, int> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 400472 0x4FACF42: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 226336 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n0: 226336 in 3 places, all below massif's threshold (1.00%)
+    n0: 174136 in 5 places, all below massif's threshold (1.00%)
+   n0: 156720 in 1 place, below massif's threshold (1.00%)
+ n3: 551832 0x50A4C62: std::vector<long, std::allocator<long> >::_M_fill_insert(__gnu_cxx::__normal_iterator<long*, std::vector<long, std::allocator<long> > >, unsigned long, long const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219520 0x50A54A6: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n1: 219520 0x50A54C7: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n0: 112792 in 6 places, all below massif's threshold (1.00%)
+ n1: 501120 0x5140CEE: std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 501120 0x51D5933: operations_research::IntVarFilteredHeuristic::IntVarFilteredHeuristic(operations_research::Solver*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 501120 0x51D5BDF: operations_research::RoutingFilteredHeuristic::RoutingFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 375840 0x51D5D76: operations_research::CheapestInsertionFilteredHeuristic::CheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 200448 0x51D5F10: operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*, operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 200448 in 3 places, all below massif's threshold (1.00%)
+     n1: 175392 0x51D62EA: operations_research::LocalCheapestInsertionFilteredHeuristic::LocalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, operations_research::RoutingSearchParameters_PairInsertionStrategy, operations_research::LocalSearchFilterManager*, operations_research::BinCapacities*, std::function<bool (std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> > const&, std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> >*)>) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 175392 in 4 places, all below massif's threshold (1.00%)
+    n0: 125280 in 3 places, all below massif's threshold (1.00%)
+ n3: 451296 0x504FEC3: operations_research::Solver::MakeIntVar(long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 225504 0x50501E5: operations_research::Solver::MakeIntVar(long, long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x51001B4: operations_research::RoutingModel::AppendHomogeneousArcCosts(operations_research::RoutingSearchParameters const&, int, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x5122D3C: operations_research::RoutingModel::CloseModelWithParameters(operations_research::RoutingSearchParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512E99A: operations_research::RoutingModel::SolveFromAssignmentsWithParameters(std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> > const&, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x512F5D6: operations_research::RoutingModel::SolveFromAssignmentWithParameters(operations_research::Assignment const*, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 225504 0x10A877: operations_research::Tsp() (in /benchmarks/build/tsp)
+        n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n1: 225504 0x5056CC7: operations_research::Solver::MakeIntVarArray(int, long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x50FE516: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+       n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n0: 288 in 1 place, below massif's threshold (1.00%)
+ n1: 335856 0x4FC4C9A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 335856 0x4FCAF8E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 335856 0x4FCB275: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 335856 0x4FC273C: operations_research::Solver::SetName(operations_research::PropagationBaseObject const*, std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 335856 0x50473A5: operations_research::Solver::MakeBoolVar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 335856 0x5056F3D: operations_research::Solver::MakeBoolVarArray(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 335856 0x50FE75B: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 335856 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 335856 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 335856 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+           n0: 335856 0x10A962: main (in /benchmarks/build/tsp)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 327872 0x4FB3D0B: void std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_realloc_insert<operations_research::IntVar*&>(__gnu_cxx::__normal_iterator<operations_research::IntVarElement*, std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> > >, operations_research::IntVar*&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 327680 0x4FAE60F: operations_research::Assignment::Add(operations_research::IntVar*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 294912 0x4FAE646: operations_research::Assignment::Add(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 294912 in 7 places, all below massif's threshold (1.00%)
+   n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 192 in 1 place, below massif's threshold (1.00%)
+ n2: 319464 0x507C1E9: void std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >::_M_range_insert<__gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > > >(__gnu_cxx::__normal_iterator<operations_research::IntVar**, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, std::forward_iterator_tag) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A4E18: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 100224 in 2 places, all below massif's threshold (1.00%)
+ n1: 263424 0x50A9ED6: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 263424 in 2 places, all below massif's threshold (1.00%)
+ n1: 219240 0x509AD37: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 219240 in 19 places, all below massif's threshold (1.00%)
+ n1: 209128 0x4F2B9F2: std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 209128 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=118300689600
+mem_heap_B=16059493
+mem_heap_extra_B=338827
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=119924498673
+mem_heap_B=16059493
+mem_heap_extra_B=338827
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=122525564770
+mem_heap_B=16059589
+mem_heap_extra_B=338827
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=123911667798
+mem_heap_B=16332085
+mem_heap_extra_B=339243
+mem_stacks_B=0
+heap_tree=peak
+n14: 16332085 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 6280581 in 590 places, all below massif's threshold (1.00%)
+ n1: 4904712 0x126A1D: __gnu_cxx::new_allocator<long>::allocate(unsigned long, void const*) (in /benchmarks/build/tsp)
+  n1: 4904712 0x126540: std::allocator_traits<std::allocator<long> >::allocate(std::allocator<long>&, unsigned long) (in /benchmarks/build/tsp)
+   n1: 4904712 0x125E0F: std::_Vector_base<long, std::allocator<long> >::_M_allocate(unsigned long) (in /benchmarks/build/tsp)
+    n1: 4904712 0x125D3E: std::_Vector_base<long, std::allocator<long> >::_M_create_storage(unsigned long) (in /benchmarks/build/tsp)
+     n2: 4904712 0x12524A: std::_Vector_base<long, std::allocator<long> >::_Vector_base(unsigned long, std::allocator<long> const&) (in /benchmarks/build/tsp)
+      n1: 4904712 0x12471B: std::vector<long, std::allocator<long> >::vector(std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+       n1: 4904712 0x12714A: void std::_Construct<std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > const&>(std::vector<long, std::allocator<long> >*, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+        n1: 4904712 0x126E17: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+         n1: 4904712 0x12693D: std::vector<long, std::allocator<long> >* std::uninitialized_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+          n1: 4904712 0x126450: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n_a<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > >&) (in /benchmarks/build/tsp)
+           n1: 4904712 0x125BDB: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::_M_fill_initialize(unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+            n1: 4904712 0x124FB5: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::vector(unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > > const&) (in /benchmarks/build/tsp)
+             n1: 4904712 0x10A3CE: operations_research::ComputeEuclideanDistanceMatrix(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&) (in /benchmarks/build/tsp)
+              n1: 4904712 0x10A7C9: operations_research::Tsp() (in /benchmarks/build/tsp)
+               n0: 4904712 0x10A962: main (in /benchmarks/build/tsp)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n4: 808896 0x4F7D8A6: std::vector<long, std::allocator<long> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A535E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A546E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A5486: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 151176 in 9 places, all below massif's threshold (1.00%)
+ n2: 601472 0x4FAC5FA: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 350816 in 6 places, all below massif's threshold (1.00%)
+  n1: 250656 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n0: 250656 in 3 places, all below massif's threshold (1.00%)
+ n1: 557192 0x4FAA4DF: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 16ul, true, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 557192 0x4FB3FFB: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::IntVar const*, int>, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Eq, std::allocator<std::pair<operations_research::IntVar const* const, int> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 400472 0x4FACF42: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 226336 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n0: 226336 in 3 places, all below massif's threshold (1.00%)
+    n0: 174136 in 5 places, all below massif's threshold (1.00%)
+   n0: 156720 in 1 place, below massif's threshold (1.00%)
+ n3: 551832 0x50A4C62: std::vector<long, std::allocator<long> >::_M_fill_insert(__gnu_cxx::__normal_iterator<long*, std::vector<long, std::allocator<long> > >, unsigned long, long const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219520 0x50A54A6: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n1: 219520 0x50A54C7: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n0: 112792 in 6 places, all below massif's threshold (1.00%)
+ n1: 501120 0x5140CEE: std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 501120 0x51D5933: operations_research::IntVarFilteredHeuristic::IntVarFilteredHeuristic(operations_research::Solver*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 501120 0x51D5BDF: operations_research::RoutingFilteredHeuristic::RoutingFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 375840 0x51D5D76: operations_research::CheapestInsertionFilteredHeuristic::CheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 200448 0x51D5F10: operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*, operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 200448 in 3 places, all below massif's threshold (1.00%)
+     n1: 175392 0x51D62EA: operations_research::LocalCheapestInsertionFilteredHeuristic::LocalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, operations_research::RoutingSearchParameters_PairInsertionStrategy, operations_research::LocalSearchFilterManager*, operations_research::BinCapacities*, std::function<bool (std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> > const&, std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> >*)>) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 175392 in 4 places, all below massif's threshold (1.00%)
+    n0: 125280 in 3 places, all below massif's threshold (1.00%)
+ n3: 451296 0x504FEC3: operations_research::Solver::MakeIntVar(long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 225504 0x50501E5: operations_research::Solver::MakeIntVar(long, long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x51001B4: operations_research::RoutingModel::AppendHomogeneousArcCosts(operations_research::RoutingSearchParameters const&, int, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x5122D3C: operations_research::RoutingModel::CloseModelWithParameters(operations_research::RoutingSearchParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512E99A: operations_research::RoutingModel::SolveFromAssignmentsWithParameters(std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> > const&, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x512F5D6: operations_research::RoutingModel::SolveFromAssignmentWithParameters(operations_research::Assignment const*, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 225504 0x10A877: operations_research::Tsp() (in /benchmarks/build/tsp)
+        n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n1: 225504 0x5056CC7: operations_research::Solver::MakeIntVarArray(int, long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x50FE516: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+       n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n0: 288 in 1 place, below massif's threshold (1.00%)
+ n1: 335856 0x4FC4C9A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 335856 0x4FCAF8E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 335856 0x4FCB275: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 335856 0x4FC273C: operations_research::Solver::SetName(operations_research::PropagationBaseObject const*, std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 335856 0x50473A5: operations_research::Solver::MakeBoolVar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 335856 0x5056F3D: operations_research::Solver::MakeBoolVarArray(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 335856 0x50FE75B: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 335856 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 335856 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 335856 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+           n0: 335856 0x10A962: main (in /benchmarks/build/tsp)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 327872 0x4FB3D0B: void std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_realloc_insert<operations_research::IntVar*&>(__gnu_cxx::__normal_iterator<operations_research::IntVarElement*, std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> > >, operations_research::IntVar*&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 327680 0x4FAE60F: operations_research::Assignment::Add(operations_research::IntVar*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 294912 0x4FAE646: operations_research::Assignment::Add(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 294912 in 7 places, all below massif's threshold (1.00%)
+   n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 192 in 1 place, below massif's threshold (1.00%)
+ n2: 319464 0x507C1E9: void std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >::_M_range_insert<__gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > > >(__gnu_cxx::__normal_iterator<operations_research::IntVar**, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, std::forward_iterator_tag) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A4E18: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 100224 in 2 places, all below massif's threshold (1.00%)
+ n1: 263424 0x50A9ED6: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 263424 in 2 places, all below massif's threshold (1.00%)
+ n1: 219240 0x509AD37: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 219240 in 19 places, all below massif's threshold (1.00%)
+ n1: 209128 0x4F2B9F2: std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 209128 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=127053111031
+mem_heap_B=16059493
+mem_heap_extra_B=338843
+mem_stacks_B=0
+heap_tree=detailed
+n14: 16059493 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 6007989 in 590 places, all below massif's threshold (1.00%)
+ n1: 4904712 0x126A1D: __gnu_cxx::new_allocator<long>::allocate(unsigned long, void const*) (in /benchmarks/build/tsp)
+  n1: 4904712 0x126540: std::allocator_traits<std::allocator<long> >::allocate(std::allocator<long>&, unsigned long) (in /benchmarks/build/tsp)
+   n1: 4904712 0x125E0F: std::_Vector_base<long, std::allocator<long> >::_M_allocate(unsigned long) (in /benchmarks/build/tsp)
+    n1: 4904712 0x125D3E: std::_Vector_base<long, std::allocator<long> >::_M_create_storage(unsigned long) (in /benchmarks/build/tsp)
+     n2: 4904712 0x12524A: std::_Vector_base<long, std::allocator<long> >::_Vector_base(unsigned long, std::allocator<long> const&) (in /benchmarks/build/tsp)
+      n1: 4904712 0x12471B: std::vector<long, std::allocator<long> >::vector(std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+       n1: 4904712 0x12714A: void std::_Construct<std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > const&>(std::vector<long, std::allocator<long> >*, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+        n1: 4904712 0x126E17: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+         n1: 4904712 0x12693D: std::vector<long, std::allocator<long> >* std::uninitialized_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+          n1: 4904712 0x126450: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n_a<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > >&) (in /benchmarks/build/tsp)
+           n1: 4904712 0x125BDB: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::_M_fill_initialize(unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+            n1: 4904712 0x124FB5: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::vector(unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > > const&) (in /benchmarks/build/tsp)
+             n1: 4904712 0x10A3CE: operations_research::ComputeEuclideanDistanceMatrix(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&) (in /benchmarks/build/tsp)
+              n1: 4904712 0x10A7C9: operations_research::Tsp() (in /benchmarks/build/tsp)
+               n0: 4904712 0x10A962: main (in /benchmarks/build/tsp)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n4: 808896 0x4F7D8A6: std::vector<long, std::allocator<long> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A535E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A546E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A5486: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 151176 in 9 places, all below massif's threshold (1.00%)
+ n2: 601472 0x4FAC5FA: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 350816 in 6 places, all below massif's threshold (1.00%)
+  n1: 250656 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n0: 250656 in 3 places, all below massif's threshold (1.00%)
+ n1: 557192 0x4FAA4DF: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 16ul, true, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 557192 0x4FB3FFB: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::IntVar const*, int>, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Eq, std::allocator<std::pair<operations_research::IntVar const* const, int> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 400472 0x4FACF42: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 226336 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n0: 226336 in 3 places, all below massif's threshold (1.00%)
+    n0: 174136 in 5 places, all below massif's threshold (1.00%)
+   n0: 156720 in 1 place, below massif's threshold (1.00%)
+ n3: 551832 0x50A4C62: std::vector<long, std::allocator<long> >::_M_fill_insert(__gnu_cxx::__normal_iterator<long*, std::vector<long, std::allocator<long> > >, unsigned long, long const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219520 0x50A54A6: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n1: 219520 0x50A54C7: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n0: 112792 in 6 places, all below massif's threshold (1.00%)
+ n1: 501120 0x5140CEE: std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 501120 0x51D5933: operations_research::IntVarFilteredHeuristic::IntVarFilteredHeuristic(operations_research::Solver*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 501120 0x51D5BDF: operations_research::RoutingFilteredHeuristic::RoutingFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 375840 0x51D5D76: operations_research::CheapestInsertionFilteredHeuristic::CheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 200448 0x51D5F10: operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*, operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 200448 in 3 places, all below massif's threshold (1.00%)
+     n1: 175392 0x51D62EA: operations_research::LocalCheapestInsertionFilteredHeuristic::LocalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, operations_research::RoutingSearchParameters_PairInsertionStrategy, operations_research::LocalSearchFilterManager*, operations_research::BinCapacities*, std::function<bool (std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> > const&, std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> >*)>) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 175392 in 4 places, all below massif's threshold (1.00%)
+    n0: 125280 in 3 places, all below massif's threshold (1.00%)
+ n3: 451296 0x504FEC3: operations_research::Solver::MakeIntVar(long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 225504 0x50501E5: operations_research::Solver::MakeIntVar(long, long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x51001B4: operations_research::RoutingModel::AppendHomogeneousArcCosts(operations_research::RoutingSearchParameters const&, int, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x5122D3C: operations_research::RoutingModel::CloseModelWithParameters(operations_research::RoutingSearchParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512E99A: operations_research::RoutingModel::SolveFromAssignmentsWithParameters(std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> > const&, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x512F5D6: operations_research::RoutingModel::SolveFromAssignmentWithParameters(operations_research::Assignment const*, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 225504 0x10A877: operations_research::Tsp() (in /benchmarks/build/tsp)
+        n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n1: 225504 0x5056CC7: operations_research::Solver::MakeIntVarArray(int, long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x50FE516: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+       n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n0: 288 in 1 place, below massif's threshold (1.00%)
+ n1: 335856 0x4FC4C9A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 335856 0x4FCAF8E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 335856 0x4FCB275: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 335856 0x4FC273C: operations_research::Solver::SetName(operations_research::PropagationBaseObject const*, std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 335856 0x50473A5: operations_research::Solver::MakeBoolVar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 335856 0x5056F3D: operations_research::Solver::MakeBoolVarArray(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 335856 0x50FE75B: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 335856 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 335856 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 335856 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+           n0: 335856 0x10A962: main (in /benchmarks/build/tsp)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 327872 0x4FB3D0B: void std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_realloc_insert<operations_research::IntVar*&>(__gnu_cxx::__normal_iterator<operations_research::IntVarElement*, std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> > >, operations_research::IntVar*&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 327680 0x4FAE60F: operations_research::Assignment::Add(operations_research::IntVar*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 294912 0x4FAE646: operations_research::Assignment::Add(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 294912 in 7 places, all below massif's threshold (1.00%)
+   n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 192 in 1 place, below massif's threshold (1.00%)
+ n2: 319464 0x507C1E9: void std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >::_M_range_insert<__gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > > >(__gnu_cxx::__normal_iterator<operations_research::IntVar**, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, std::forward_iterator_tag) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A4E18: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 100224 in 2 places, all below massif's threshold (1.00%)
+ n1: 263424 0x50A9ED6: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 263424 in 2 places, all below massif's threshold (1.00%)
+ n1: 219240 0x509AD37: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 219240 in 19 places, all below massif's threshold (1.00%)
+ n1: 209128 0x4F2B9F2: std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 209128 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=44
+#-----------
+time=129536446041
+mem_heap_B=16059493
+mem_heap_extra_B=338843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=131910276257
+mem_heap_B=16059589
+mem_heap_extra_B=338843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=134033495040
+mem_heap_B=16059493
+mem_heap_extra_B=338843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=136624023665
+mem_heap_B=16059493
+mem_heap_extra_B=338859
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=139225509132
+mem_heap_B=16059589
+mem_heap_extra_B=338843
+mem_stacks_B=0
+heap_tree=detailed
+n14: 16059589 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 6008085 in 590 places, all below massif's threshold (1.00%)
+ n1: 4904712 0x126A1D: __gnu_cxx::new_allocator<long>::allocate(unsigned long, void const*) (in /benchmarks/build/tsp)
+  n1: 4904712 0x126540: std::allocator_traits<std::allocator<long> >::allocate(std::allocator<long>&, unsigned long) (in /benchmarks/build/tsp)
+   n1: 4904712 0x125E0F: std::_Vector_base<long, std::allocator<long> >::_M_allocate(unsigned long) (in /benchmarks/build/tsp)
+    n1: 4904712 0x125D3E: std::_Vector_base<long, std::allocator<long> >::_M_create_storage(unsigned long) (in /benchmarks/build/tsp)
+     n2: 4904712 0x12524A: std::_Vector_base<long, std::allocator<long> >::_Vector_base(unsigned long, std::allocator<long> const&) (in /benchmarks/build/tsp)
+      n1: 4904712 0x12471B: std::vector<long, std::allocator<long> >::vector(std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+       n1: 4904712 0x12714A: void std::_Construct<std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > const&>(std::vector<long, std::allocator<long> >*, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+        n1: 4904712 0x126E17: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+         n1: 4904712 0x12693D: std::vector<long, std::allocator<long> >* std::uninitialized_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+          n1: 4904712 0x126450: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n_a<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > >&) (in /benchmarks/build/tsp)
+           n1: 4904712 0x125BDB: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::_M_fill_initialize(unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+            n1: 4904712 0x124FB5: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::vector(unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > > const&) (in /benchmarks/build/tsp)
+             n1: 4904712 0x10A3CE: operations_research::ComputeEuclideanDistanceMatrix(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&) (in /benchmarks/build/tsp)
+              n1: 4904712 0x10A7C9: operations_research::Tsp() (in /benchmarks/build/tsp)
+               n0: 4904712 0x10A962: main (in /benchmarks/build/tsp)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n4: 808896 0x4F7D8A6: std::vector<long, std::allocator<long> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A535E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A546E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A5486: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 151176 in 9 places, all below massif's threshold (1.00%)
+ n2: 601472 0x4FAC5FA: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 350816 in 6 places, all below massif's threshold (1.00%)
+  n1: 250656 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n0: 250656 in 3 places, all below massif's threshold (1.00%)
+ n1: 557192 0x4FAA4DF: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 16ul, true, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 557192 0x4FB3FFB: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::IntVar const*, int>, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Eq, std::allocator<std::pair<operations_research::IntVar const* const, int> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 400472 0x4FACF42: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 226336 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n0: 226336 in 3 places, all below massif's threshold (1.00%)
+    n0: 174136 in 5 places, all below massif's threshold (1.00%)
+   n0: 156720 in 1 place, below massif's threshold (1.00%)
+ n3: 551832 0x50A4C62: std::vector<long, std::allocator<long> >::_M_fill_insert(__gnu_cxx::__normal_iterator<long*, std::vector<long, std::allocator<long> > >, unsigned long, long const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219520 0x50A54A6: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n1: 219520 0x50A54C7: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n0: 112792 in 6 places, all below massif's threshold (1.00%)
+ n1: 501120 0x5140CEE: std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 501120 0x51D5933: operations_research::IntVarFilteredHeuristic::IntVarFilteredHeuristic(operations_research::Solver*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 501120 0x51D5BDF: operations_research::RoutingFilteredHeuristic::RoutingFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 375840 0x51D5D76: operations_research::CheapestInsertionFilteredHeuristic::CheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 200448 0x51D5F10: operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*, operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 200448 in 3 places, all below massif's threshold (1.00%)
+     n1: 175392 0x51D62EA: operations_research::LocalCheapestInsertionFilteredHeuristic::LocalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, operations_research::RoutingSearchParameters_PairInsertionStrategy, operations_research::LocalSearchFilterManager*, operations_research::BinCapacities*, std::function<bool (std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> > const&, std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> >*)>) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 175392 in 4 places, all below massif's threshold (1.00%)
+    n0: 125280 in 3 places, all below massif's threshold (1.00%)
+ n3: 451296 0x504FEC3: operations_research::Solver::MakeIntVar(long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 225504 0x50501E5: operations_research::Solver::MakeIntVar(long, long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x51001B4: operations_research::RoutingModel::AppendHomogeneousArcCosts(operations_research::RoutingSearchParameters const&, int, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x5122D3C: operations_research::RoutingModel::CloseModelWithParameters(operations_research::RoutingSearchParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512E99A: operations_research::RoutingModel::SolveFromAssignmentsWithParameters(std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> > const&, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x512F5D6: operations_research::RoutingModel::SolveFromAssignmentWithParameters(operations_research::Assignment const*, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 225504 0x10A877: operations_research::Tsp() (in /benchmarks/build/tsp)
+        n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n1: 225504 0x5056CC7: operations_research::Solver::MakeIntVarArray(int, long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x50FE516: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+       n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n0: 288 in 1 place, below massif's threshold (1.00%)
+ n1: 335856 0x4FC4C9A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 335856 0x4FCAF8E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 335856 0x4FCB275: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 335856 0x4FC273C: operations_research::Solver::SetName(operations_research::PropagationBaseObject const*, std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 335856 0x50473A5: operations_research::Solver::MakeBoolVar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 335856 0x5056F3D: operations_research::Solver::MakeBoolVarArray(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 335856 0x50FE75B: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 335856 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 335856 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 335856 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+           n0: 335856 0x10A962: main (in /benchmarks/build/tsp)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 327872 0x4FB3D0B: void std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_realloc_insert<operations_research::IntVar*&>(__gnu_cxx::__normal_iterator<operations_research::IntVarElement*, std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> > >, operations_research::IntVar*&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 327680 0x4FAE60F: operations_research::Assignment::Add(operations_research::IntVar*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 294912 0x4FAE646: operations_research::Assignment::Add(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 294912 in 7 places, all below massif's threshold (1.00%)
+   n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 192 in 1 place, below massif's threshold (1.00%)
+ n2: 319464 0x507C1E9: void std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >::_M_range_insert<__gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > > >(__gnu_cxx::__normal_iterator<operations_research::IntVar**, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, std::forward_iterator_tag) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A4E18: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 100224 in 2 places, all below massif's threshold (1.00%)
+ n1: 263424 0x50A9ED6: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 263424 in 2 places, all below massif's threshold (1.00%)
+ n1: 219240 0x509AD37: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 219240 in 19 places, all below massif's threshold (1.00%)
+ n1: 209128 0x4F2B9F2: std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 209128 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=141820384721
+mem_heap_B=16059589
+mem_heap_extra_B=338843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=142042807624
+mem_heap_B=16059493
+mem_heap_extra_B=338843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=144416538417
+mem_heap_B=16059493
+mem_heap_extra_B=338843
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=144446527852
+mem_heap_B=16076189
+mem_heap_extra_B=338915
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=144491464248
+mem_heap_B=16125237
+mem_heap_extra_B=338915
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=161689276953
+mem_heap_B=16108861
+mem_heap_extra_B=338923
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=163560019654
+mem_heap_B=16092477
+mem_heap_extra_B=338939
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=163591239055
+mem_heap_B=16125237
+mem_heap_extra_B=338931
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=180789123839
+mem_heap_B=16108957
+mem_heap_extra_B=338955
+mem_stacks_B=0
+heap_tree=detailed
+n14: 16108957 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 6024685 in 592 places, all below massif's threshold (1.00%)
+ n1: 4904712 0x126A1D: __gnu_cxx::new_allocator<long>::allocate(unsigned long, void const*) (in /benchmarks/build/tsp)
+  n1: 4904712 0x126540: std::allocator_traits<std::allocator<long> >::allocate(std::allocator<long>&, unsigned long) (in /benchmarks/build/tsp)
+   n1: 4904712 0x125E0F: std::_Vector_base<long, std::allocator<long> >::_M_allocate(unsigned long) (in /benchmarks/build/tsp)
+    n1: 4904712 0x125D3E: std::_Vector_base<long, std::allocator<long> >::_M_create_storage(unsigned long) (in /benchmarks/build/tsp)
+     n2: 4904712 0x12524A: std::_Vector_base<long, std::allocator<long> >::_Vector_base(unsigned long, std::allocator<long> const&) (in /benchmarks/build/tsp)
+      n1: 4904712 0x12471B: std::vector<long, std::allocator<long> >::vector(std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+       n1: 4904712 0x12714A: void std::_Construct<std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > const&>(std::vector<long, std::allocator<long> >*, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+        n1: 4904712 0x126E17: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+         n1: 4904712 0x12693D: std::vector<long, std::allocator<long> >* std::uninitialized_fill_n<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+          n1: 4904712 0x126450: std::vector<long, std::allocator<long> >* std::__uninitialized_fill_n_a<std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> >, std::vector<long, std::allocator<long> > >(std::vector<long, std::allocator<long> >*, unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > >&) (in /benchmarks/build/tsp)
+           n1: 4904712 0x125BDB: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::_M_fill_initialize(unsigned long, std::vector<long, std::allocator<long> > const&) (in /benchmarks/build/tsp)
+            n1: 4904712 0x124FB5: std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > >::vector(unsigned long, std::vector<long, std::allocator<long> > const&, std::allocator<std::vector<long, std::allocator<long> > > const&) (in /benchmarks/build/tsp)
+             n1: 4904712 0x10A3CE: operations_research::ComputeEuclideanDistanceMatrix(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&) (in /benchmarks/build/tsp)
+              n1: 4904712 0x10A7C9: operations_research::Tsp() (in /benchmarks/build/tsp)
+               n0: 4904712 0x10A962: main (in /benchmarks/build/tsp)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n4: 808896 0x4F7D8A6: std::vector<long, std::allocator<long> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A535E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A546E: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n1: 219240 0x50A5486: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 151176 in 9 places, all below massif's threshold (1.00%)
+ n2: 601472 0x4FAC5FA: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 350816 in 6 places, all below massif's threshold (1.00%)
+  n1: 250656 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n0: 250656 in 3 places, all below massif's threshold (1.00%)
+ n1: 557192 0x4FAA4DF: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 16ul, true, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 557192 0x4FB3FFB: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::IntVar const*, int>, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::IntVar const*, void>::Eq, std::allocator<std::pair<operations_research::IntVar const* const, int> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 400472 0x4FACF42: operations_research::Assignment::Assignment(operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 226336 0x52163C8: operations_research::SolutionCollector::SolutionCollector(operations_research::Solver*, operations_research::Assignment const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n0: 226336 in 3 places, all below massif's threshold (1.00%)
+    n0: 174136 in 5 places, all below massif's threshold (1.00%)
+   n0: 156720 in 1 place, below massif's threshold (1.00%)
+ n3: 551832 0x50A4C62: std::vector<long, std::allocator<long> >::_M_fill_insert(__gnu_cxx::__normal_iterator<long*, std::vector<long, std::allocator<long> > >, unsigned long, long const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219520 0x50A54A6: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n1: 219520 0x50A54C7: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219520 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219520 in 19 places, all below massif's threshold (1.00%)
+  n0: 112792 in 6 places, all below massif's threshold (1.00%)
+ n1: 501120 0x5140CEE: std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 501120 0x51D5933: operations_research::IntVarFilteredHeuristic::IntVarFilteredHeuristic(operations_research::Solver*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 501120 0x51D5BDF: operations_research::RoutingFilteredHeuristic::RoutingFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 375840 0x51D5D76: operations_research::CheapestInsertionFilteredHeuristic::CheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 200448 0x51D5F10: operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, std::function<long (long)>, operations_research::LocalSearchFilterManager*, operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 200448 in 3 places, all below massif's threshold (1.00%)
+     n1: 175392 0x51D62EA: operations_research::LocalCheapestInsertionFilteredHeuristic::LocalCheapestInsertionFilteredHeuristic(operations_research::RoutingModel*, std::function<bool ()>, std::function<long (long, long, long)>, operations_research::RoutingSearchParameters_PairInsertionStrategy, operations_research::LocalSearchFilterManager*, operations_research::BinCapacities*, std::function<bool (std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> > const&, std::vector<operations_research::RoutingModel::VariableValuePair, std::allocator<operations_research::RoutingModel::VariableValuePair> >*)>) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 175392 in 4 places, all below massif's threshold (1.00%)
+    n0: 125280 in 3 places, all below massif's threshold (1.00%)
+ n3: 451296 0x504FEC3: operations_research::Solver::MakeIntVar(long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 225504 0x50501E5: operations_research::Solver::MakeIntVar(long, long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x51001B4: operations_research::RoutingModel::AppendHomogeneousArcCosts(operations_research::RoutingSearchParameters const&, int, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x5122D3C: operations_research::RoutingModel::CloseModelWithParameters(operations_research::RoutingSearchParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512E99A: operations_research::RoutingModel::SolveFromAssignmentsWithParameters(std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> > const&, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x512F5D6: operations_research::RoutingModel::SolveFromAssignmentWithParameters(operations_research::Assignment const*, operations_research::RoutingSearchParameters const&, std::vector<operations_research::Assignment const*, std::allocator<operations_research::Assignment const*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 225504 0x10A877: operations_research::Tsp() (in /benchmarks/build/tsp)
+        n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n1: 225504 0x5056CC7: operations_research::Solver::MakeIntVarArray(int, long, long, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 225504 0x50FE516: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 225504 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 225504 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 225504 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+       n0: 225504 0x10A962: main (in /benchmarks/build/tsp)
+  n0: 288 in 1 place, below massif's threshold (1.00%)
+ n2: 360640 0x4FB3D0B: void std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> >::_M_realloc_insert<operations_research::IntVar*&>(__gnu_cxx::__normal_iterator<operations_research::IntVarElement*, std::vector<operations_research::IntVarElement, std::allocator<operations_research::IntVarElement> > >, operations_research::IntVar*&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 327680 0x4FAE60F: operations_research::Assignment::Add(operations_research::IntVar*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 294912 0x4FAE646: operations_research::Assignment::Add(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 294912 in 7 places, all below massif's threshold (1.00%)
+   n0: 32768 in 1 place, below massif's threshold (1.00%)
+  n0: 32960 in 1 place, below massif's threshold (1.00%)
+ n1: 335856 0x4FC4C9A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 335856 0x4FCAF8E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 335856 0x4FCB275: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<operations_research::PropagationBaseObject const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Hash, absl::lts_20240116::container_internal::HashEq<operations_research::PropagationBaseObject const*, void>::Eq, std::allocator<std::pair<operations_research::PropagationBaseObject const* const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 335856 0x4FC273C: operations_research::Solver::SetName(operations_research::PropagationBaseObject const*, std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 335856 0x50473A5: operations_research::Solver::MakeBoolVar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 335856 0x5056F3D: operations_research::Solver::MakeBoolVarArray(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 335856 0x50FE75B: operations_research::RoutingModel::Initialize() (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 335856 0x512D319: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&, operations_research::RoutingModelParameters const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 335856 0x512DBA7: operations_research::RoutingModel::RoutingModel(operations_research::RoutingIndexManager const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 335856 0x10A7B3: operations_research::Tsp() (in /benchmarks/build/tsp)
+           n0: 335856 0x10A962: main (in /benchmarks/build/tsp)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 319464 0x507C1E9: void std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> >::_M_range_insert<__gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > > >(__gnu_cxx::__normal_iterator<operations_research::IntVar**, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, __gnu_cxx::__normal_iterator<operations_research::IntVar* const*, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > >, std::forward_iterator_tag) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 219240 0x50A4E18: operations_research::IntVarLocalSearchOperator::IntVarLocalSearchOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, bool) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 219240 0x509A773: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 219240 in 19 places, all below massif's threshold (1.00%)
+  n0: 100224 in 2 places, all below massif's threshold (1.00%)
+ n1: 263424 0x50A9ED6: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_default_append(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 263424 in 2 places, all below massif's threshold (1.00%)
+ n1: 219240 0x509AD37: operations_research::PathOperator::PathOperator(std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, std::vector<operations_research::IntVar*, std::allocator<operations_research::IntVar*> > const&, operations_research::PathOperator::IterationParameters) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 219240 in 19 places, all below massif's threshold (1.00%)
+ n1: 209128 0x4F2B9F2: std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n0: 209128 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=181774335878
+mem_heap_B=16108861
+mem_heap_extra_B=338939
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=183384918423
+mem_heap_B=16108957
+mem_heap_extra_B=338955
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=184377787344
+mem_heap_B=16108861
+mem_heap_extra_B=338939
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=185979796448
+mem_heap_B=16108957
+mem_heap_extra_B=338939
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=186202218991
+mem_heap_B=16108861
+mem_heap_extra_B=338955
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=188576049265
+mem_heap_B=16108957
+mem_heap_extra_B=338955
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=188605963347
+mem_heap_B=16109061
+mem_heap_extra_B=338971
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=188635943389
+mem_heap_B=15989229
+mem_heap_extra_B=338083
+mem_stacks_B=0
+heap_tree=empty

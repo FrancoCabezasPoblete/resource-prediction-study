@@ -17,8 +17,8 @@ RUN apt-get install -y \
 
 # Install OR-Tools for C++ (https://github.com/google/or-tools/releases/download/v9.9/or-tools_amd64_debian-11_cpp_v9.9.3963.tar.gz)
 RUN wget https://github.com/google/or-tools/releases/download/v9.9/or-tools_amd64_debian-11_cpp_v9.9.3963.tar.gz \
-    && mkdir -p /opt/or-tools \
-    && tar -xzvf or-tools_amd64_debian-11_cpp_v9.9.3963.tar.gz -C /opt/or-tools --strip-components=1 \
+    && mkdir -p /opt/ortools \
+    && tar -xzvf or-tools_amd64_debian-11_cpp_v9.9.3963.tar.gz -C /opt/ortools --strip-components=1 \
     && rm or-tools_amd64_debian-11_cpp_v9.9.3963.tar.gz
 
 ENV PATH="/opt/or-tools/bin:${PATH}"

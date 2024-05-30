@@ -1,0 +1,1585 @@
+desc: --massif-out-file=results/KNP_mass.out
+cmd: /benchmarks/build/knp
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=20218157
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=20278271
+mem_heap_B=84677
+mem_heap_extra_B=411
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=20330424
+mem_heap_B=86157
+mem_heap_extra_B=707
+mem_stacks_B=0
+heap_tree=detailed
+n4: 86157 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x6C41545: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x400FFE1: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40100E8: call_init (dl-init.c:30)
+    n1: 72704 0x40100E8: _dl_init (dl-init.c:119)
+     n0: 72704 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 9360 0x6DC18A1: __new_exitfn (cxa_atexit.c:114)
+  n8: 9360 0x6DC1941: __internal_atexit (cxa_atexit.c:44)
+   n1: 2080 0x400FFE1: call_init.part.0 (dl-init.c:72)
+    n1: 2080 0x40100E8: call_init (dl-init.c:30)
+     n1: 2080 0x40100E8: _dl_init (dl-init.c:119)
+      n0: 2080 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 1040 0x4EAA698: _GLOBAL__sub_I.00101_linear_solver.pb.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1040 0x400FFE1: call_init.part.0 (dl-init.c:72)
+     n1: 1040 0x40100E8: call_init (dl-init.c:30)
+      n1: 1040 0x40100E8: _dl_init (dl-init.c:119)
+       n0: 1040 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 1040 0x4EAB4B4: _GLOBAL__sub_I.00101_cp_model.pb.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1040 0x400FFE1: call_init.part.0 (dl-init.c:72)
+     n1: 1040 0x40100E8: call_init (dl-init.c:30)
+      n1: 1040 0x40100E8: _dl_init (dl-init.c:119)
+       n0: 1040 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 1040 0x4EAC726: _GLOBAL__sub_I.00101_rcpsp.pb.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1040 0x400FFE1: call_init.part.0 (dl-init.c:72)
+     n1: 1040 0x40100E8: call_init (dl-init.c:30)
+      n1: 1040 0x40100E8: _dl_init (dl-init.c:119)
+       n0: 1040 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 1040 0x4EB2192: _GLOBAL__sub_I.00101_callback.pb.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1040 0x400FFE1: call_init.part.0 (dl-init.c:72)
+     n1: 1040 0x40100E8: call_init (dl-init.c:30)
+      n1: 1040 0x40100E8: _dl_init (dl-init.c:119)
+       n0: 1040 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 1040 0x4EB2F5C: _GLOBAL__sub_I.00101_model_update.pb.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1040 0x400FFE1: call_init.part.0 (dl-init.c:72)
+     n1: 1040 0x40100E8: call_init (dl-init.c:30)
+      n1: 1040 0x40100E8: _dl_init (dl-init.c:119)
+       n0: 1040 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 1040 0x4EB3C9E: _GLOBAL__sub_I.00101_gurobi.pb.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1040 0x400FFE1: call_init.part.0 (dl-init.c:72)
+     n1: 1040 0x40100E8: call_init (dl-init.c:30)
+      n1: 1040 0x40100E8: _dl_init (dl-init.c:119)
+       n0: 1040 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 1040 0x4EB5EAF: _GLOBAL__sub_I.00101_descriptor.pb.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1040 0x400FFE1: call_init.part.0 (dl-init.c:72)
+     n1: 1040 0x40100E8: call_init (dl-init.c:30)
+      n1: 1040 0x40100E8: _dl_init (dl-init.c:119)
+       n0: 1040 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 2797 in 31 places, all below massif's threshold (1.00%)
+ n1: 1296 0x5A7547A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1296 0x5AB6A0E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, google::protobuf::Descriptor::WellKnownType>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, google::protobuf::Descriptor::WellKnownType> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1296 0x5AB6CDF: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, google::protobuf::Descriptor::WellKnownType>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, google::protobuf::Descriptor::WellKnownType> > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1296 0x5A96B5E: google::protobuf::DescriptorPool::Tables::Tables() (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1296 0x5A96EC2: google::protobuf::DescriptorPool::internal_generated_pool() (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 1296 0x5A96F65: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 1296 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 1296 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 1296 0x400FFE1: call_init.part.0 (dl-init.c:72)
+          n1: 1296 0x40100E8: call_init (dl-init.c:30)
+           n1: 1296 0x40100E8: _dl_init (dl-init.c:119)
+            n0: 1296 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+#-----------
+snapshot=4
+#-----------
+time=20385944
+mem_heap_B=98217
+mem_heap_extra_B=2823
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=20434543
+mem_heap_B=92330
+mem_heap_extra_B=1638
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=20510692
+mem_heap_B=92087
+mem_heap_extra_B=1689
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=20574409
+mem_heap_B=89147
+mem_heap_extra_B=1173
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=20617287
+mem_heap_B=99126
+mem_heap_extra_B=2994
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=20687826
+mem_heap_B=117326
+mem_heap_extra_B=5874
+mem_stacks_B=0
+heap_tree=detailed
+n8: 117326 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x6C41545: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x400FFE1: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40100E8: call_init (dl-init.c:30)
+    n1: 72704 0x40100E8: _dl_init (dl-init.c:119)
+     n0: 72704 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 12288 0x5AD2D85: google::protobuf::FieldDescriptorProto::New(google::protobuf::Arena*) const (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 12288 0x5B23DF9: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 12288 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 12288 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 12288 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 12288 0x5B5F5B9: bool google::protobuf::internal::MergeFromImpl<false>(std::basic_string_view<char, std::char_traits<char> >, google::protobuf::MessageLite*, google::protobuf::MessageLite::ParseFlags) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 12288 0x5ADCD1F: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 12288 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n2: 12288 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 12288 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+           n1: 12288 0x400FFE1: call_init.part.0 (dl-init.c:72)
+            n1: 12288 0x40100E8: call_init (dl-init.c:30)
+             n1: 12288 0x40100E8: _dl_init (dl-init.c:119)
+              n0: 12288 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 9360 0x6DC18A1: __new_exitfn (cxa_atexit.c:114)
+  n2: 9360 0x6DC1941: __internal_atexit (cxa_atexit.c:44)
+   n0: 7280 in 7 places, all below massif's threshold (1.00%)
+   n1: 2080 0x400FFE1: call_init.part.0 (dl-init.c:72)
+    n1: 2080 0x40100E8: call_init (dl-init.c:30)
+     n1: 2080 0x40100E8: _dl_init (dl-init.c:119)
+      n0: 2080 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 8416 0x5A74759: google::protobuf::internal::ArenaStringPtr::MutableNoCopy[abi:cxx11](google::protobuf::Arena*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 8416 0x5B21BD9: google::protobuf::internal::(anonymous namespace)::ReadStringNoArena(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, unsigned int, google::protobuf::internal::TcParseTableBase const*, google::protobuf::internal::ArenaStringPtr&) [clone .constprop.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 8416 0x5B25EBA: google::protobuf::internal::TcParser::FastSS1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 8416 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 8352 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n2: 8352 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 8320 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n2: 8320 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 8320 0x5B5F5B9: bool google::protobuf::internal::MergeFromImpl<false>(std::basic_string_view<char, std::char_traits<char> >, google::protobuf::MessageLite*, google::protobuf::MessageLite::ParseFlags) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 8320 0x5ADCD1F: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+           n1: 8320 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+            n2: 8320 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+             n1: 8320 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+              n1: 8320 0x400FFE1: call_init.part.0 (dl-init.c:72)
+               n1: 8320 0x40100E8: call_init (dl-init.c:30)
+                n1: 8320 0x40100E8: _dl_init (dl-init.c:119)
+                 n0: 8320 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+       n0: 32 in 1 place, below massif's threshold (1.00%)
+     n0: 64 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 5467 in 33 places, all below massif's threshold (1.00%)
+ n1: 4723 0x6CD2859: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n2: 4723 0x6CD327F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n2: 4723 0x5B21C3C: google::protobuf::internal::(anonymous namespace)::ReadStringNoArena(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, unsigned int, google::protobuf::internal::TcParseTableBase const*, google::protobuf::internal::ArenaStringPtr&) [clone .constprop.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 4723 0x5B25EBA: google::protobuf::internal::TcParser::FastSS1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 4723 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 4659 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n2: 4659 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 4659 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n2: 4659 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 4659 0x5B5F5B9: bool google::protobuf::internal::MergeFromImpl<false>(std::basic_string_view<char, std::char_traits<char> >, google::protobuf::MessageLite*, google::protobuf::MessageLite::ParseFlags) (in /opt/ortools/lib/libortools.so.9.9.3963)
+           n1: 4659 0x5ADCD1F: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+            n1: 4659 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+             n2: 4659 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+              n1: 4659 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+               n1: 4659 0x400FFE1: call_init.part.0 (dl-init.c:72)
+                n1: 4659 0x40100E8: call_init (dl-init.c:30)
+                 n1: 4659 0x40100E8: _dl_init (dl-init.c:119)
+                  n0: 4659 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+              n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 64 in 2 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 3072 0x5B69167: google::protobuf::internal::RepeatedPtrFieldBase::InternalExtend(int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 3072 0x5B69654: google::protobuf::internal::RepeatedPtrFieldBase::AddOutOfLineHelper(void*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 3072 0x5B23E04: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 3072 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 3072 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n2: 3072 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 3072 0x5B5F5B9: bool google::protobuf::internal::MergeFromImpl<false>(std::basic_string_view<char, std::char_traits<char> >, google::protobuf::MessageLite*, google::protobuf::MessageLite::ParseFlags) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 3072 0x5ADCD1F: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 3072 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n2: 3072 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+           n1: 3072 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+            n1: 3072 0x400FFE1: call_init.part.0 (dl-init.c:72)
+             n1: 3072 0x40100E8: call_init (dl-init.c:30)
+              n1: 3072 0x40100E8: _dl_init (dl-init.c:119)
+               n0: 3072 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1296 0x5A7547A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1296 0x5AB6A0E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, google::protobuf::Descriptor::WellKnownType>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, google::protobuf::Descriptor::WellKnownType> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1296 0x5AB6CDF: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, google::protobuf::Descriptor::WellKnownType>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, google::protobuf::Descriptor::WellKnownType> > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1296 0x5A96B5E: google::protobuf::DescriptorPool::Tables::Tables() (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1296 0x5A96EC2: google::protobuf::DescriptorPool::internal_generated_pool() (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 1296 0x5A96F65: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 1296 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 1296 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 1296 0x400FFE1: call_init.part.0 (dl-init.c:72)
+          n1: 1296 0x40100E8: call_init (dl-init.c:30)
+           n1: 1296 0x40100E8: _dl_init (dl-init.c:119)
+            n0: 1296 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+#-----------
+snapshot=10
+#-----------
+time=20740664
+mem_heap_B=127913
+mem_heap_extra_B=8023
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=20812819
+mem_heap_B=143967
+mem_heap_extra_B=10945
+mem_stacks_B=0
+heap_tree=peak
+n8: 143967 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x6C41545: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x400FFE1: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40100E8: call_init (dl-init.c:30)
+    n1: 72704 0x40100E8: _dl_init (dl-init.c:119)
+     n0: 72704 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 22368 0x5AD2D85: google::protobuf::FieldDescriptorProto::New(google::protobuf::Arena*) const (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 22368 0x5B23DF9: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 22368 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 22368 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 22368 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 22368 0x5B5F5B9: bool google::protobuf::internal::MergeFromImpl<false>(std::basic_string_view<char, std::char_traits<char> >, google::protobuf::MessageLite*, google::protobuf::MessageLite::ParseFlags) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 22368 0x5ADCD1F: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 22368 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n2: 22368 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 22368 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+           n1: 22368 0x400FFE1: call_init.part.0 (dl-init.c:72)
+            n1: 22368 0x40100E8: call_init (dl-init.c:30)
+             n1: 22368 0x40100E8: _dl_init (dl-init.c:119)
+              n0: 22368 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 17184 0x5A74759: google::protobuf::internal::ArenaStringPtr::MutableNoCopy[abi:cxx11](google::protobuf::Arena*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 17184 0x5B21BD9: google::protobuf::internal::(anonymous namespace)::ReadStringNoArena(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, unsigned int, google::protobuf::internal::TcParseTableBase const*, google::protobuf::internal::ArenaStringPtr&) [clone .constprop.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 17184 0x5B25EBA: google::protobuf::internal::TcParser::FastSS1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 17184 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 17120 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n2: 17120 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 17088 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n2: 17088 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 15552 0x5B5F5B9: bool google::protobuf::internal::MergeFromImpl<false>(std::basic_string_view<char, std::char_traits<char> >, google::protobuf::MessageLite*, google::protobuf::MessageLite::ParseFlags) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 15552 0x5ADCD1F: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+           n1: 15552 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+            n2: 15552 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+             n1: 15552 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+              n1: 15552 0x400FFE1: call_init.part.0 (dl-init.c:72)
+               n1: 15552 0x40100E8: call_init (dl-init.c:30)
+                n1: 15552 0x40100E8: _dl_init (dl-init.c:119)
+                 n0: 15552 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+         n0: 1536 in 1 place, below massif's threshold (1.00%)
+       n0: 32 in 1 place, below massif's threshold (1.00%)
+     n0: 64 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 9360 0x6DC18A1: __new_exitfn (cxa_atexit.c:114)
+  n2: 9360 0x6DC1941: __internal_atexit (cxa_atexit.c:44)
+   n0: 7280 in 7 places, all below massif's threshold (1.00%)
+   n1: 2080 0x400FFE1: call_init.part.0 (dl-init.c:72)
+    n1: 2080 0x40100E8: call_init (dl-init.c:30)
+     n1: 2080 0x40100E8: _dl_init (dl-init.c:119)
+      n0: 2080 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 9044 0x6CD2859: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n2: 9044 0x6CD327F: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+   n2: 9044 0x5B21C3C: google::protobuf::internal::(anonymous namespace)::ReadStringNoArena(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, unsigned int, google::protobuf::internal::TcParseTableBase const*, google::protobuf::internal::ArenaStringPtr&) [clone .constprop.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 9044 0x5B25EBA: google::protobuf::internal::TcParser::FastSS1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 9044 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 8980 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n2: 8980 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 8980 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n2: 8980 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 8108 0x5B5F5B9: bool google::protobuf::internal::MergeFromImpl<false>(std::basic_string_view<char, std::char_traits<char> >, google::protobuf::MessageLite*, google::protobuf::MessageLite::ParseFlags) (in /opt/ortools/lib/libortools.so.9.9.3963)
+           n1: 8108 0x5ADCD1F: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+            n1: 8108 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+             n2: 8108 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+              n1: 8108 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+               n1: 8108 0x400FFE1: call_init.part.0 (dl-init.c:72)
+                n1: 8108 0x40100E8: call_init (dl-init.c:30)
+                 n1: 8108 0x40100E8: _dl_init (dl-init.c:119)
+                  n0: 8108 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+              n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 872 in 1 place, below massif's threshold (1.00%)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 64 in 2 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 8107 in 33 places, all below massif's threshold (1.00%)
+ n1: 2848 0x5B69167: google::protobuf::internal::RepeatedPtrFieldBase::InternalExtend(int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 2848 0x5B69654: google::protobuf::internal::RepeatedPtrFieldBase::AddOutOfLineHelper(void*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 2848 0x5B23E04: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 2848 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 2848 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n2: 2848 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 2176 0x5B5F5B9: bool google::protobuf::internal::MergeFromImpl<false>(std::basic_string_view<char, std::char_traits<char> >, google::protobuf::MessageLite*, google::protobuf::MessageLite::ParseFlags) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 2176 0x5ADCD1F: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 2176 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n2: 2176 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+           n1: 2176 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+            n1: 2176 0x400FFE1: call_init.part.0 (dl-init.c:72)
+             n1: 2176 0x40100E8: call_init (dl-init.c:30)
+              n1: 2176 0x40100E8: _dl_init (dl-init.c:119)
+               n0: 2176 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+       n0: 672 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 2352 0x5AD3339: google::protobuf::EnumValueDescriptorProto::New(google::protobuf::Arena*) const (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 2352 0x5B23DF9: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 2352 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 2352 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 2352 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 2352 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 2352 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 2352 0x5B5F5B9: bool google::protobuf::internal::MergeFromImpl<false>(std::basic_string_view<char, std::char_traits<char> >, google::protobuf::MessageLite*, google::protobuf::MessageLite::ParseFlags) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 2352 0x5ADCD1F: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 2352 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+           n2: 2352 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+            n1: 2352 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+             n1: 2352 0x400FFE1: call_init.part.0 (dl-init.c:72)
+              n1: 2352 0x40100E8: call_init (dl-init.c:30)
+               n1: 2352 0x40100E8: _dl_init (dl-init.c:119)
+                n0: 2352 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=20868467
+mem_heap_B=101203
+mem_heap_extra_B=2869
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=20917684
+mem_heap_B=96927
+mem_heap_extra_B=2641
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=20966885
+mem_heap_B=109504
+mem_heap_extra_B=5152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=21016089
+mem_heap_B=91127
+mem_heap_extra_B=1617
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=21058532
+mem_heap_B=96820
+mem_heap_extra_B=2516
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=21108119
+mem_heap_B=99726
+mem_heap_extra_B=3186
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=21143246
+mem_heap_B=99442
+mem_heap_extra_B=3014
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=21194300
+mem_heap_B=93650
+mem_heap_extra_B=2062
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=21262656
+mem_heap_B=112631
+mem_heap_extra_B=4977
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=21322607
+mem_heap_B=123094
+mem_heap_extra_B=6730
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=21372359
+mem_heap_B=114948
+mem_heap_extra_B=5172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=21421201
+mem_heap_B=94290
+mem_heap_extra_B=2142
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=21469763
+mem_heap_B=94081
+mem_heap_extra_B=2031
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=21499346
+mem_heap_B=98036
+mem_heap_extra_B=2836
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=21557844
+mem_heap_B=108236
+mem_heap_extra_B=4124
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=21596854
+mem_heap_B=117934
+mem_heap_extra_B=5730
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=21638699
+mem_heap_B=128192
+mem_heap_extra_B=7232
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=21677800
+mem_heap_B=129334
+mem_heap_extra_B=7522
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=21717206
+mem_heap_B=130332
+mem_heap_extra_B=7724
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=21757336
+mem_heap_B=114130
+mem_heap_extra_B=5342
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=21835432
+mem_heap_B=105183
+mem_heap_extra_B=4193
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=21875177
+mem_heap_B=97046
+mem_heap_extra_B=2842
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=21914673
+mem_heap_B=101850
+mem_heap_extra_B=3558
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=21954477
+mem_heap_B=106308
+mem_heap_extra_B=4324
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=21993531
+mem_heap_B=101756
+mem_heap_extra_B=3612
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=22033332
+mem_heap_B=99058
+mem_heap_extra_B=3110
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=22092049
+mem_heap_B=113800
+mem_heap_extra_B=5872
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=22131200
+mem_heap_B=99429
+mem_heap_extra_B=3235
+mem_stacks_B=0
+heap_tree=detailed
+n8: 99429 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x6C41545: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x400FFE1: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40100E8: call_init (dl-init.c:30)
+    n1: 72704 0x40100E8: _dl_init (dl-init.c:119)
+     n0: 72704 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 9360 0x6DC18A1: __new_exitfn (cxa_atexit.c:114)
+  n8: 9360 0x6DC1941: __internal_atexit (cxa_atexit.c:44)
+   n1: 2080 0x400FFE1: call_init.part.0 (dl-init.c:72)
+    n1: 2080 0x40100E8: call_init (dl-init.c:30)
+     n1: 2080 0x40100E8: _dl_init (dl-init.c:119)
+      n0: 2080 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 1040 0x4EAA698: _GLOBAL__sub_I.00101_linear_solver.pb.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1040 0x400FFE1: call_init.part.0 (dl-init.c:72)
+     n1: 1040 0x40100E8: call_init (dl-init.c:30)
+      n1: 1040 0x40100E8: _dl_init (dl-init.c:119)
+       n0: 1040 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 1040 0x4EAB4B4: _GLOBAL__sub_I.00101_cp_model.pb.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1040 0x400FFE1: call_init.part.0 (dl-init.c:72)
+     n1: 1040 0x40100E8: call_init (dl-init.c:30)
+      n1: 1040 0x40100E8: _dl_init (dl-init.c:119)
+       n0: 1040 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 1040 0x4EAC726: _GLOBAL__sub_I.00101_rcpsp.pb.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1040 0x400FFE1: call_init.part.0 (dl-init.c:72)
+     n1: 1040 0x40100E8: call_init (dl-init.c:30)
+      n1: 1040 0x40100E8: _dl_init (dl-init.c:119)
+       n0: 1040 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 1040 0x4EB2192: _GLOBAL__sub_I.00101_callback.pb.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1040 0x400FFE1: call_init.part.0 (dl-init.c:72)
+     n1: 1040 0x40100E8: call_init (dl-init.c:30)
+      n1: 1040 0x40100E8: _dl_init (dl-init.c:119)
+       n0: 1040 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 1040 0x4EB2F5C: _GLOBAL__sub_I.00101_model_update.pb.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1040 0x400FFE1: call_init.part.0 (dl-init.c:72)
+     n1: 1040 0x40100E8: call_init (dl-init.c:30)
+      n1: 1040 0x40100E8: _dl_init (dl-init.c:119)
+       n0: 1040 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 1040 0x4EB3C9E: _GLOBAL__sub_I.00101_gurobi.pb.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1040 0x400FFE1: call_init.part.0 (dl-init.c:72)
+     n1: 1040 0x40100E8: call_init (dl-init.c:30)
+      n1: 1040 0x40100E8: _dl_init (dl-init.c:119)
+       n0: 1040 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 1040 0x4EB5EAF: _GLOBAL__sub_I.00101_descriptor.pb.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1040 0x400FFE1: call_init.part.0 (dl-init.c:72)
+     n1: 1040 0x40100E8: call_init (dl-init.c:30)
+      n1: 1040 0x40100E8: _dl_init (dl-init.c:119)
+       n0: 1040 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 6072 in 38 places, all below massif's threshold (1.00%)
+ n2: 5632 0x5AE0D81: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 5376 0x5ADC4C3: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 5376 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 5376 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 5376 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 4608 0x400FFE1: call_init.part.0 (dl-init.c:72)
+       n1: 4608 0x40100E8: call_init (dl-init.c:30)
+        n1: 4608 0x40100E8: _dl_init (dl-init.c:119)
+         n0: 4608 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 768 in 1 place, below massif's threshold (1.00%)
+  n0: 256 in 1 place, below massif's threshold (1.00%)
+ n2: 1792 0x5ADC697: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1712 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1712 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 1712 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1590 0x400FFE1: call_init.part.0 (dl-init.c:72)
+      n1: 1590 0x40100E8: call_init (dl-init.c:30)
+       n1: 1590 0x40100E8: _dl_init (dl-init.c:119)
+        n0: 1590 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+     n0: 122 in 1 place, below massif's threshold (1.00%)
+  n0: 80 in 1 place, below massif's threshold (1.00%)
+ n1: 1536 0x5AE066F: void std::vector<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry> >::_M_realloc_insert<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry>(__gnu_cxx::__normal_iterator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry*, std::vector<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry> > >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry&&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1536 0x5ADD3FA: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1536 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 1536 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1536 0x400FFE1: call_init.part.0 (dl-init.c:72)
+      n1: 1536 0x40100E8: call_init (dl-init.c:30)
+       n1: 1536 0x40100E8: _dl_init (dl-init.c:119)
+        n0: 1536 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1296 0x5A7547A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1296 0x5AB6A0E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, google::protobuf::Descriptor::WellKnownType>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, google::protobuf::Descriptor::WellKnownType> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1296 0x5AB6CDF: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, google::protobuf::Descriptor::WellKnownType>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, google::protobuf::Descriptor::WellKnownType> > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1296 0x5A96B5E: google::protobuf::DescriptorPool::Tables::Tables() (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1296 0x5A96EC2: google::protobuf::DescriptorPool::internal_generated_pool() (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 1296 0x5A96F65: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 1296 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 1296 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 1296 0x400FFE1: call_init.part.0 (dl-init.c:72)
+          n1: 1296 0x40100E8: call_init (dl-init.c:30)
+           n1: 1296 0x40100E8: _dl_init (dl-init.c:119)
+            n0: 1296 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 1037 0x5ADD013: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1037 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1037 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 1037 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=22209334
+mem_heap_B=119473
+mem_heap_extra_B=6655
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=22249327
+mem_heap_B=123006
+mem_heap_extra_B=7546
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=22308257
+mem_heap_B=106512
+mem_heap_extra_B=4536
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=22347494
+mem_heap_B=114523
+mem_heap_extra_B=5933
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=22406428
+mem_heap_B=104955
+mem_heap_extra_B=4277
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=22445601
+mem_heap_B=105591
+mem_heap_extra_B=4601
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=22484994
+mem_heap_B=114211
+mem_heap_extra_B=6181
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=22524260
+mem_heap_B=101986
+mem_heap_extra_B=3830
+mem_stacks_B=0
+heap_tree=detailed
+n8: 101986 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x6C41545: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x400FFE1: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40100E8: call_init (dl-init.c:30)
+    n1: 72704 0x40100E8: _dl_init (dl-init.c:119)
+     n0: 72704 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 9360 0x6DC18A1: __new_exitfn (cxa_atexit.c:114)
+  n2: 9360 0x6DC1941: __internal_atexit (cxa_atexit.c:44)
+   n0: 7280 in 7 places, all below massif's threshold (1.00%)
+   n1: 2080 0x400FFE1: call_init.part.0 (dl-init.c:72)
+    n1: 2080 0x40100E8: call_init (dl-init.c:30)
+     n1: 2080 0x40100E8: _dl_init (dl-init.c:119)
+      n0: 2080 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 7102 in 38 places, all below massif's threshold (1.00%)
+ n2: 6656 0x5AE0D81: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 6400 0x5ADC4C3: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 6144 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 6144 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 6144 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 5120 0x400FFE1: call_init.part.0 (dl-init.c:72)
+       n1: 5120 0x40100E8: call_init (dl-init.c:30)
+        n1: 5120 0x40100E8: _dl_init (dl-init.c:119)
+         n0: 5120 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 1024 in 1 place, below massif's threshold (1.00%)
+   n0: 256 in 1 place, below massif's threshold (1.00%)
+  n0: 256 in 1 place, below massif's threshold (1.00%)
+ n2: 2167 0x5ADC697: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 2031 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 2031 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 2031 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1770 0x400FFE1: call_init.part.0 (dl-init.c:72)
+      n1: 1770 0x40100E8: call_init (dl-init.c:30)
+       n1: 1770 0x40100E8: _dl_init (dl-init.c:119)
+        n0: 1770 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+     n0: 261 in 1 place, below massif's threshold (1.00%)
+  n0: 136 in 1 place, below massif's threshold (1.00%)
+ n1: 1536 0x5AE066F: void std::vector<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry> >::_M_realloc_insert<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry>(__gnu_cxx::__normal_iterator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry*, std::vector<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry> > >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry&&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1536 0x5ADD3FA: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1536 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 1536 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1536 0x400FFE1: call_init.part.0 (dl-init.c:72)
+      n1: 1536 0x40100E8: call_init (dl-init.c:30)
+       n1: 1536 0x40100E8: _dl_init (dl-init.c:119)
+        n0: 1536 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1296 0x5A7547A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1296 0x5AB6A0E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, google::protobuf::Descriptor::WellKnownType>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, google::protobuf::Descriptor::WellKnownType> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1296 0x5AB6CDF: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, google::protobuf::Descriptor::WellKnownType>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, google::protobuf::Descriptor::WellKnownType> > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1296 0x5A96B5E: google::protobuf::DescriptorPool::Tables::Tables() (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1296 0x5A96EC2: google::protobuf::DescriptorPool::internal_generated_pool() (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 1296 0x5A96F65: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 1296 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 1296 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 1296 0x400FFE1: call_init.part.0 (dl-init.c:72)
+          n1: 1296 0x40100E8: call_init (dl-init.c:30)
+           n1: 1296 0x40100E8: _dl_init (dl-init.c:119)
+            n0: 1296 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 1165 0x5ADD013: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1165 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1165 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 1165 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=22563252
+mem_heap_B=110659
+mem_heap_extra_B=5517
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=22602592
+mem_heap_B=102855
+mem_heap_extra_B=4009
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=22632217
+mem_heap_B=109232
+mem_heap_extra_B=5184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=22661979
+mem_heap_B=109555
+mem_heap_extra_B=4957
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=22692080
+mem_heap_B=115958
+mem_heap_extra_B=6242
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=22721683
+mem_heap_B=110237
+mem_heap_extra_B=5107
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=22751893
+mem_heap_B=110682
+mem_heap_extra_B=5310
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=22781522
+mem_heap_B=109618
+mem_heap_extra_B=5110
+mem_stacks_B=0
+heap_tree=detailed
+n12: 109618 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x6C41545: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x400FFE1: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40100E8: call_init (dl-init.c:30)
+    n1: 72704 0x40100E8: _dl_init (dl-init.c:119)
+     n0: 72704 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 9360 0x6DC18A1: __new_exitfn (cxa_atexit.c:114)
+  n2: 9360 0x6DC1941: __internal_atexit (cxa_atexit.c:44)
+   n0: 7280 in 7 places, all below massif's threshold (1.00%)
+   n1: 2080 0x400FFE1: call_init.part.0 (dl-init.c:72)
+    n1: 2080 0x40100E8: call_init (dl-init.c:30)
+     n1: 2080 0x40100E8: _dl_init (dl-init.c:119)
+      n0: 2080 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 7424 0x5AE0D81: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 7168 0x5ADC4C3: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 6912 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 6912 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 6912 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 5120 0x400FFE1: call_init.part.0 (dl-init.c:72)
+       n1: 5120 0x40100E8: call_init (dl-init.c:30)
+        n1: 5120 0x40100E8: _dl_init (dl-init.c:119)
+         n0: 5120 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+      n2: 1792 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 1280 0x400FFE1: call_init.part.0 (dl-init.c:72)
+        n1: 1280 0x40100E8: call_init (dl-init.c:30)
+         n1: 1280 0x40100E8: _dl_init (dl-init.c:119)
+          n0: 1280 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+       n0: 512 in 1 place, below massif's threshold (1.00%)
+   n0: 256 in 1 place, below massif's threshold (1.00%)
+  n0: 256 in 1 place, below massif's threshold (1.00%)
+ n0: 6196 in 34 places, all below massif's threshold (1.00%)
+ n1: 3072 0x5AE066F: void std::vector<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry> >::_M_realloc_insert<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry>(__gnu_cxx::__normal_iterator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry*, std::vector<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry> > >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry&&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 3072 0x5ADD3FA: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 3072 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 3072 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 3072 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 3072 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 3072 0x400FFE1: call_init.part.0 (dl-init.c:72)
+        n1: 3072 0x40100E8: call_init (dl-init.c:30)
+         n1: 3072 0x40100E8: _dl_init (dl-init.c:119)
+          n0: 3072 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 2459 0x5ADC697: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 2240 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 2240 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 2240 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1825 0x400FFE1: call_init.part.0 (dl-init.c:72)
+      n1: 1825 0x40100E8: call_init (dl-init.c:30)
+       n1: 1825 0x40100E8: _dl_init (dl-init.c:119)
+        n0: 1825 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+     n0: 415 in 1 place, below massif's threshold (1.00%)
+  n0: 219 in 1 place, below massif's threshold (1.00%)
+ n1: 2112 0x5AD2D85: google::protobuf::FieldDescriptorProto::New(google::protobuf::Arena*) const (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 2112 0x5B23DF9: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 2112 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 2112 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 2112 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 2112 0x5B5F5B9: bool google::protobuf::internal::MergeFromImpl<false>(std::basic_string_view<char, std::char_traits<char> >, google::protobuf::MessageLite*, google::protobuf::MessageLite::ParseFlags) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 2112 0x5ADCD1F: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 2112 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n2: 2112 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 2112 0x400FFE1: call_init.part.0 (dl-init.c:72)
+           n1: 2112 0x40100E8: call_init (dl-init.c:30)
+            n1: 2112 0x40100E8: _dl_init (dl-init.c:119)
+             n0: 2112 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1307 0x5ADD013: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1307 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1307 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 1307 in 2 places, all below massif's threshold (1.00%)
+ n1: 1296 0x5A7547A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1296 0x5AB6A0E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, google::protobuf::Descriptor::WellKnownType>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, google::protobuf::Descriptor::WellKnownType> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1296 0x5AB6CDF: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, google::protobuf::Descriptor::WellKnownType>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, google::protobuf::Descriptor::WellKnownType> > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1296 0x5A96B5E: google::protobuf::DescriptorPool::Tables::Tables() (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1296 0x5A96EC2: google::protobuf::DescriptorPool::internal_generated_pool() (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 1296 0x5A96F65: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 1296 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 1296 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 1296 0x400FFE1: call_init.part.0 (dl-init.c:72)
+          n1: 1296 0x40100E8: call_init (dl-init.c:30)
+           n1: 1296 0x40100E8: _dl_init (dl-init.c:119)
+            n0: 1296 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 1280 0x5AE1C11: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1280 0x5AE24BE: std::pair<absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const*>, bool> absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>, 256, false> >::insert_unique<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>(google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry&&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1280 0x5ADCF81: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1280 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1280 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 1280 in 2 places, all below massif's threshold (1.00%)
+ n1: 1248 0x5AE0D2A: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1248 0x5AE10E2: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1248 0x5ADC4C3: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1248 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1248 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 1248 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n0: 1248 in 2 places, all below massif's threshold (1.00%)
+ n1: 1160 0x5AD46A1: google::protobuf::DescriptorProto::New(google::protobuf::Arena*) const (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1160 0x5B23DF9: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 1160 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1160 0x5B5F5B9: bool google::protobuf::internal::MergeFromImpl<false>(std::basic_string_view<char, std::char_traits<char> >, google::protobuf::MessageLite*, google::protobuf::MessageLite::ParseFlags) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1160 0x5ADCD1F: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 1160 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n2: 1160 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 1160 0x400FFE1: call_init.part.0 (dl-init.c:72)
+         n1: 1160 0x40100E8: call_init (dl-init.c:30)
+          n1: 1160 0x40100E8: _dl_init (dl-init.c:119)
+           n0: 1160 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=22811181
+mem_heap_B=118317
+mem_heap_extra_B=6547
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=22841175
+mem_heap_B=120382
+mem_heap_extra_B=6954
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=22870921
+mem_heap_B=108192
+mem_heap_extra_B=5048
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=22900548
+mem_heap_B=106772
+mem_heap_extra_B=4628
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=22930357
+mem_heap_B=115705
+mem_heap_extra_B=6207
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=22960973
+mem_heap_B=121593
+mem_heap_extra_B=7311
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=22990577
+mem_heap_B=116931
+mem_heap_extra_B=6277
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=23021764
+mem_heap_B=109189
+mem_heap_extra_B=5171
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=23051357
+mem_heap_B=108581
+mem_heap_extra_B=4939
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=23081043
+mem_heap_B=113398
+mem_heap_extra_B=6002
+mem_stacks_B=0
+heap_tree=detailed
+n12: 113398 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x6C41545: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x400FFE1: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40100E8: call_init (dl-init.c:30)
+    n1: 72704 0x40100E8: _dl_init (dl-init.c:119)
+     n0: 72704 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 9360 0x6DC18A1: __new_exitfn (cxa_atexit.c:114)
+  n2: 9360 0x6DC1941: __internal_atexit (cxa_atexit.c:44)
+   n0: 7280 in 7 places, all below massif's threshold (1.00%)
+   n1: 2080 0x400FFE1: call_init.part.0 (dl-init.c:72)
+    n1: 2080 0x40100E8: call_init (dl-init.c:30)
+     n1: 2080 0x40100E8: _dl_init (dl-init.c:119)
+      n0: 2080 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 8704 0x5AE0D81: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 8448 0x5ADC4C3: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 8192 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 8192 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 8192 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 6144 0x400FFE1: call_init.part.0 (dl-init.c:72)
+       n1: 6144 0x40100E8: call_init (dl-init.c:30)
+        n1: 6144 0x40100E8: _dl_init (dl-init.c:119)
+         n0: 6144 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+      n2: 2048 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 1536 0x400FFE1: call_init.part.0 (dl-init.c:72)
+        n1: 1536 0x40100E8: call_init (dl-init.c:30)
+         n1: 1536 0x40100E8: _dl_init (dl-init.c:119)
+          n0: 1536 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+       n0: 512 in 1 place, below massif's threshold (1.00%)
+   n0: 256 in 1 place, below massif's threshold (1.00%)
+  n0: 256 in 1 place, below massif's threshold (1.00%)
+ n0: 6908 in 34 places, all below massif's threshold (1.00%)
+ n1: 3072 0x5AE066F: void std::vector<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry> >::_M_realloc_insert<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry>(__gnu_cxx::__normal_iterator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry*, std::vector<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry> > >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry&&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 3072 0x5ADD3FA: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 3072 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 3072 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 3072 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 3072 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 3072 0x400FFE1: call_init.part.0 (dl-init.c:72)
+        n1: 3072 0x40100E8: call_init (dl-init.c:30)
+         n1: 3072 0x40100E8: _dl_init (dl-init.c:119)
+          n0: 3072 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 2983 0x5ADC697: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 2764 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 2764 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 2764 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 2266 0x400FFE1: call_init.part.0 (dl-init.c:72)
+      n1: 2266 0x40100E8: call_init (dl-init.c:30)
+       n1: 2266 0x40100E8: _dl_init (dl-init.c:119)
+        n0: 2266 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+     n0: 498 in 1 place, below massif's threshold (1.00%)
+  n0: 219 in 1 place, below massif's threshold (1.00%)
+ n1: 2592 0x5AD2D85: google::protobuf::FieldDescriptorProto::New(google::protobuf::Arena*) const (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 2592 0x5B23DF9: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 2592 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 2592 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 2592 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 2592 0x5B5F5B9: bool google::protobuf::internal::MergeFromImpl<false>(std::basic_string_view<char, std::char_traits<char> >, google::protobuf::MessageLite*, google::protobuf::MessageLite::ParseFlags) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 2592 0x5ADCD1F: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 2592 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n2: 2592 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 2592 0x400FFE1: call_init.part.0 (dl-init.c:72)
+           n1: 2592 0x40100E8: call_init (dl-init.c:30)
+            n1: 2592 0x40100E8: _dl_init (dl-init.c:119)
+             n0: 2592 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1536 0x5AE1C11: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1536 0x5AE24BE: std::pair<absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const*>, bool> absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>, 256, false> >::insert_unique<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>(google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry&&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1536 0x5ADCF81: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1536 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1536 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 1536 in 2 places, all below massif's threshold (1.00%)
+ n1: 1523 0x5ADD013: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1523 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1523 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 1523 in 2 places, all below massif's threshold (1.00%)
+ n2: 1472 0x5A74759: google::protobuf::internal::ArenaStringPtr::MutableNoCopy[abi:cxx11](google::protobuf::Arena*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 1472 0x5B21BD9: google::protobuf::internal::(anonymous namespace)::ReadStringNoArena(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, unsigned int, google::protobuf::internal::TcParseTableBase const*, google::protobuf::internal::ArenaStringPtr&) [clone .constprop.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1472 0x5B25EBA: google::protobuf::internal::TcParser::FastSS1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 1472 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1408 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n2: 1408 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 1312 0x5B23E6A: google::protobuf::internal::TcParser::FastMtR1(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcFieldData, google::protobuf::internal::TcParseTableBase const*, unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n2: 1312 0x5B21F20: google::protobuf::internal::TcParser::ParseLoop(google::protobuf::MessageLite*, char const*, google::protobuf::internal::ParseContext*, google::protobuf::internal::TcParseTableBase const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 1312 0x5B5F5B9: bool google::protobuf::internal::MergeFromImpl<false>(std::basic_string_view<char, std::char_traits<char> >, google::protobuf::MessageLite*, google::protobuf::MessageLite::ParseFlags) (in /opt/ortools/lib/libortools.so.9.9.3963)
+          n1: 1312 0x5ADCD1F: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+           n1: 1312 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+            n2: 1312 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+             n1: 1312 0x400FFE1: call_init.part.0 (dl-init.c:72)
+              n1: 1312 0x40100E8: call_init (dl-init.c:30)
+               n1: 1312 0x40100E8: _dl_init (dl-init.c:119)
+                n0: 1312 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+       n0: 96 in 1 place, below massif's threshold (1.00%)
+     n0: 64 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1296 0x5A7547A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1296 0x5AB6A0E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, google::protobuf::Descriptor::WellKnownType>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, google::protobuf::Descriptor::WellKnownType> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1296 0x5AB6CDF: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, google::protobuf::Descriptor::WellKnownType>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, google::protobuf::Descriptor::WellKnownType> > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1296 0x5A96B5E: google::protobuf::DescriptorPool::Tables::Tables() (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1296 0x5A96EC2: google::protobuf::DescriptorPool::internal_generated_pool() (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 1296 0x5A96F65: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 1296 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 1296 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 1296 0x400FFE1: call_init.part.0 (dl-init.c:72)
+          n1: 1296 0x40100E8: call_init (dl-init.c:30)
+           n1: 1296 0x40100E8: _dl_init (dl-init.c:119)
+            n0: 1296 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 1248 0x5AE0D2A: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1248 0x5AE10E2: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1248 0x5ADC4C3: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1248 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1248 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 1248 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n0: 1248 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=23110868
+mem_heap_B=118397
+mem_heap_extra_B=7171
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=23140483
+mem_heap_B=108384
+mem_heap_extra_B=5008
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=23170158
+mem_heap_B=108715
+mem_heap_extra_B=5029
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=23199995
+mem_heap_B=111230
+mem_heap_extra_B=5658
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=23230770
+mem_heap_B=117585
+mem_heap_extra_B=6719
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=23371171
+mem_heap_B=109265
+mem_heap_extra_B=4919
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=23400890
+mem_heap_B=110766
+mem_heap_extra_B=4962
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=23430549
+mem_heap_B=111960
+mem_heap_extra_B=4952
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=23461997
+mem_heap_B=113045
+mem_heap_extra_B=4963
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=23492009
+mem_heap_B=117765
+mem_heap_extra_B=4987
+mem_stacks_B=0
+heap_tree=detailed
+n11: 117765 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x6C41545: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x400FFE1: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40100E8: call_init (dl-init.c:30)
+    n1: 72704 0x40100E8: _dl_init (dl-init.c:119)
+     n0: 72704 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15600 0x6DC18A1: __new_exitfn (cxa_atexit.c:114)
+  n2: 15600 0x6DC1941: __internal_atexit (cxa_atexit.c:44)
+   n0: 10400 in 10 places, all below massif's threshold (1.00%)
+   n1: 5200 0x400FFE1: call_init.part.0 (dl-init.c:72)
+    n1: 5200 0x40100E8: call_init (dl-init.c:30)
+     n1: 5200 0x40100E8: _dl_init (dl-init.c:119)
+      n0: 5200 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 9216 0x5AE0D81: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 8960 0x5ADC4C3: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 8448 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 8448 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 8448 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 6400 0x400FFE1: call_init.part.0 (dl-init.c:72)
+       n1: 6400 0x40100E8: call_init (dl-init.c:30)
+        n1: 6400 0x40100E8: _dl_init (dl-init.c:119)
+         n0: 6400 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+      n2: 2048 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 1536 0x400FFE1: call_init.part.0 (dl-init.c:72)
+        n1: 1536 0x40100E8: call_init (dl-init.c:30)
+         n1: 1536 0x40100E8: _dl_init (dl-init.c:119)
+          n0: 1536 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+       n0: 512 in 1 place, below massif's threshold (1.00%)
+   n0: 512 in 1 place, below massif's threshold (1.00%)
+  n0: 256 in 1 place, below massif's threshold (1.00%)
+ n0: 4530 in 38 places, all below massif's threshold (1.00%)
+ n1: 3200 0x5A502FF: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 24ul, true, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 3200 0x5A5092F: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::basic_string_view<char, std::char_traits<char> >, absl::lts_20240116::CommandLineFlag*>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::basic_string_view<char, std::char_traits<char> > const, absl::lts_20240116::CommandLineFlag*> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 3200 0x5A50B75: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::basic_string_view<char, std::char_traits<char> >, absl::lts_20240116::CommandLineFlag*>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::basic_string_view<char, std::char_traits<char> > const, absl::lts_20240116::CommandLineFlag*> > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 3200 0x5A4EADD: absl::lts_20240116::flags_internal::FlagRegistry::RegisterFlag(absl::lts_20240116::CommandLineFlag&, char const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 3200 0x5A4FF4F: absl::lts_20240116::flags_internal::RegisterCommandLineFlag(absl::lts_20240116::CommandLineFlag&, char const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 3200 0x4EAEE8F: _GLOBAL__sub_I_lp_solver.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 3200 0x400FFE1: call_init.part.0 (dl-init.c:72)
+        n1: 3200 0x40100E8: call_init (dl-init.c:30)
+         n1: 3200 0x40100E8: _dl_init (dl-init.c:119)
+          n0: 3200 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 0 in 5 places, all below massif's threshold (1.00%)
+ n1: 3072 0x5AE066F: void std::vector<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry> >::_M_realloc_insert<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry>(__gnu_cxx::__normal_iterator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry*, std::vector<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry> > >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry&&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 3072 0x5ADD3FA: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 3072 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 3072 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 3072 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 3072 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 3072 0x400FFE1: call_init.part.0 (dl-init.c:72)
+        n1: 3072 0x40100E8: call_init (dl-init.c:30)
+         n1: 3072 0x40100E8: _dl_init (dl-init.c:119)
+          n0: 3072 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 3065 0x5ADC697: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 2829 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 2829 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 2829 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 2331 0x400FFE1: call_init.part.0 (dl-init.c:72)
+      n1: 2331 0x40100E8: call_init (dl-init.c:30)
+       n1: 2331 0x40100E8: _dl_init (dl-init.c:119)
+        n0: 2331 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+     n0: 498 in 1 place, below massif's threshold (1.00%)
+  n0: 236 in 1 place, below massif's threshold (1.00%)
+ n1: 1872 0x5AE0D2A: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1872 0x5AE10E2: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n2: 1872 0x5ADC4C3: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1560 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1560 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n2: 1560 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 1248 0x400FFE1: call_init.part.0 (dl-init.c:72)
+        n1: 1248 0x40100E8: call_init (dl-init.c:30)
+         n1: 1248 0x40100E8: _dl_init (dl-init.c:119)
+          n0: 1248 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+       n0: 312 in 1 place, below massif's threshold (1.00%)
+    n0: 312 in 1 place, below massif's threshold (1.00%)
+ n1: 1674 0x5ADD013: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1674 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1674 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 1674 in 2 places, all below massif's threshold (1.00%)
+ n1: 1536 0x5AE1C11: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1536 0x5AE24BE: std::pair<absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const*>, bool> absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>, 256, false> >::insert_unique<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry>(google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::FileEntry&&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1536 0x5ADCF81: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1536 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1536 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n0: 1536 in 2 places, all below massif's threshold (1.00%)
+ n1: 1296 0x5A7547A: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 40ul, false, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1296 0x5AB6A0E: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, google::protobuf::Descriptor::WellKnownType>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, google::protobuf::Descriptor::WellKnownType> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1296 0x5AB6CDF: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, google::protobuf::Descriptor::WellKnownType>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, google::protobuf::Descriptor::WellKnownType> > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 1296 0x5A96B5E: google::protobuf::DescriptorPool::Tables::Tables() (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 1296 0x5A96EC2: google::protobuf::DescriptorPool::internal_generated_pool() (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 1296 0x5A96F65: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 1296 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+        n1: 1296 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+         n1: 1296 0x400FFE1: call_init.part.0 (dl-init.c:72)
+          n1: 1296 0x40100E8: call_init (dl-init.c:30)
+           n1: 1296 0x40100E8: _dl_init (dl-init.c:119)
+            n0: 1296 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+#-----------
+snapshot=76
+#-----------
+time=23521725
+mem_heap_B=120921
+mem_heap_extra_B=5031
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=23551526
+mem_heap_B=127165
+mem_heap_extra_B=5075
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=23581756
+mem_heap_B=128629
+mem_heap_extra_B=5131
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=23612348
+mem_heap_B=132845
+mem_heap_extra_B=5267
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=23645561
+mem_heap_B=138269
+mem_heap_extra_B=5331
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=23676917
+mem_heap_B=142341
+mem_heap_extra_B=5627
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=23707717
+mem_heap_B=147253
+mem_heap_extra_B=7571
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=23755791
+mem_heap_B=147629
+mem_heap_extra_B=7571
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=23794400
+mem_heap_B=148013
+mem_heap_extra_B=7571
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=23870979
+mem_heap_B=148781
+mem_heap_extra_B=7571
+mem_stacks_B=0
+heap_tree=detailed
+n11: 148781 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x6C41545: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x400FFE1: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x40100E8: call_init (dl-init.c:30)
+    n1: 72704 0x40100E8: _dl_init (dl-init.c:119)
+     n0: 72704 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 35360 0x6DC18A1: __new_exitfn (cxa_atexit.c:114)
+  n2: 35360 0x6DC1941: __internal_atexit (cxa_atexit.c:44)
+   n1: 20800 0x400FFE1: call_init.part.0 (dl-init.c:72)
+    n1: 20800 0x40100E8: call_init (dl-init.c:30)
+     n1: 20800 0x40100E8: _dl_init (dl-init.c:119)
+      n0: 20800 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+   n0: 14560 in 14 places, all below massif's threshold (1.00%)
+ n0: 12994 in 60 places, all below massif's threshold (1.00%)
+ n2: 9216 0x5AE0D81: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n2: 8960 0x5ADC4C3: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 8448 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 8448 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 8448 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 6400 0x400FFE1: call_init.part.0 (dl-init.c:72)
+       n1: 6400 0x40100E8: call_init (dl-init.c:30)
+        n1: 6400 0x40100E8: _dl_init (dl-init.c:119)
+         n0: 6400 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 2048 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n0: 2048 in 2 places, all below massif's threshold (1.00%)
+   n0: 512 in 1 place, below massif's threshold (1.00%)
+  n0: 256 in 1 place, below massif's threshold (1.00%)
+ n1: 3200 0x5A502FF: bool absl::lts_20240116::container_internal::HashSetResizeHelper::InitializeSlots<std::allocator<char>, 24ul, true, 8ul>(absl::lts_20240116::container_internal::CommonFields&, void*, std::allocator<char>) [clone .isra.0] (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 3200 0x5A5092F: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::basic_string_view<char, std::char_traits<char> >, absl::lts_20240116::CommandLineFlag*>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::basic_string_view<char, std::char_traits<char> > const, absl::lts_20240116::CommandLineFlag*> > >::resize(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 3200 0x5A50B75: absl::lts_20240116::container_internal::raw_hash_set<absl::lts_20240116::container_internal::FlatHashMapPolicy<std::basic_string_view<char, std::char_traits<char> >, absl::lts_20240116::CommandLineFlag*>, absl::lts_20240116::container_internal::StringHash, absl::lts_20240116::container_internal::StringEq, std::allocator<std::pair<std::basic_string_view<char, std::char_traits<char> > const, absl::lts_20240116::CommandLineFlag*> > >::prepare_insert(unsigned long) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 3200 0x5A4EADD: absl::lts_20240116::flags_internal::FlagRegistry::RegisterFlag(absl::lts_20240116::CommandLineFlag&, char const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 3200 0x5A4FF4F: absl::lts_20240116::flags_internal::RegisterCommandLineFlag(absl::lts_20240116::CommandLineFlag&, char const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 3200 0x4EAEE8F: _GLOBAL__sub_I_lp_solver.cc (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 3200 0x400FFE1: call_init.part.0 (dl-init.c:72)
+        n1: 3200 0x40100E8: call_init (dl-init.c:30)
+         n1: 3200 0x40100E8: _dl_init (dl-init.c:119)
+          n0: 3200 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 0 in 5 places, all below massif's threshold (1.00%)
+ n1: 3176 0x10D01F: __gnu_cxx::new_allocator<long>::allocate(unsigned long, void const*) (in /benchmarks/build/knp)
+  n1: 3176 0x10C807: std::allocator_traits<std::allocator<long> >::allocate(std::allocator<long>&, unsigned long) (in /benchmarks/build/knp)
+   n1: 3176 0x10BE09: std::_Vector_base<long, std::allocator<long> >::_M_allocate(unsigned long) (in /benchmarks/build/knp)
+    n0: 3176 in 3 places, all below massif's threshold (1.00%)
+ n1: 3072 0x5AE066F: void std::vector<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry> >::_M_realloc_insert<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry>(__gnu_cxx::__normal_iterator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry*, std::vector<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry> > >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::EncodedEntry&&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 3072 0x5ADD3FA: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 3072 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 3072 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n2: 3072 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+      n1: 3072 0x5B008E1: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+       n1: 3072 0x400FFE1: call_init.part.0 (dl-init.c:72)
+        n1: 3072 0x40100E8: call_init (dl-init.c:30)
+         n1: 3072 0x40100E8: _dl_init (dl-init.c:119)
+          n0: 3072 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 3065 0x5ADC697: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 2829 0x5ADD24D: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 2829 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n2: 2829 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+     n1: 2331 0x400FFE1: call_init.part.0 (dl-init.c:72)
+      n1: 2331 0x40100E8: call_init (dl-init.c:30)
+       n1: 2331 0x40100E8: _dl_init (dl-init.c:119)
+        n0: 2331 0x40010C9: ??? (in /lib/x86_64-linux-gnu/ld-2.31.so)
+     n0: 498 in 1 place, below massif's threshold (1.00%)
+  n0: 236 in 1 place, below massif's threshold (1.00%)
+ n1: 2448 0x4F3C9A8: operations_research::KnapsackPropagator::Init(std::vector<long, std::allocator<long> > const&, std::vector<long, std::allocator<long> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 2448 0x4F3E9AA: operations_research::KnapsackGenericSolver::Init(std::vector<long, std::allocator<long> > const&, std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > > const&, std::vector<long, std::allocator<long> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 2448 0x4F40A24: operations_research::KnapsackSolver::Init(std::vector<long, std::allocator<long> > const&, std::vector<std::vector<long, std::allocator<long> >, std::allocator<std::vector<long, std::allocator<long> > > > const&, std::vector<long, std::allocator<long> > const&) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n1: 2448 0x10A5EF: operations_research::RunKnapsackExample() (in /benchmarks/build/knp)
+     n0: 2448 0x10AACF: main (in /benchmarks/build/knp)
+ n1: 1872 0x5AE0D2A: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1872 0x5AE10E2: absl::lts_20240116::container_internal::btree<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >::rebalance_or_split(absl::lts_20240116::container_internal::btree_iterator<absl::lts_20240116::container_internal::btree_node<absl::lts_20240116::container_internal::set_params<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolCompare, std::allocator<google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry>, 256, false> >, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const&, google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::SymbolEntry const*>*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1872 0x5ADC4C3: google::protobuf::EncodedDescriptorDatabase::DescriptorIndex::AddSymbol(std::basic_string_view<char, std::char_traits<char> >) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 1872 in 2 places, all below massif's threshold (1.00%)
+ n1: 1674 0x5ADD013: google::protobuf::EncodedDescriptorDatabase::Add(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+  n1: 1674 0x5A96F92: google::protobuf::DescriptorPool::InternalAddGeneratedFile(void const*, int) (in /opt/ortools/lib/libortools.so.9.9.3963)
+   n1: 1674 0x5B008F6: google::protobuf::(anonymous namespace)::AddDescriptorsImpl(google::protobuf::internal::DescriptorTable const*) (in /opt/ortools/lib/libortools.so.9.9.3963)
+    n0: 1674 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=86
+#-----------
+time=23963936
+mem_heap_B=147453
+mem_heap_extra_B=7555
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=23994458
+mem_heap_B=142325
+mem_heap_extra_B=5979
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=88
+#-----------
+time=24025521
+mem_heap_B=142861
+mem_heap_extra_B=6035
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=89
+#-----------
+time=24072460
+mem_heap_B=143718
+mem_heap_extra_B=6098
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=90
+#-----------
+time=24104501
+mem_heap_B=143718
+mem_heap_extra_B=6098
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=91
+#-----------
+time=24222862
+mem_heap_B=137005
+mem_heap_extra_B=5299
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=92
+#-----------
+time=24252958
+mem_heap_B=102685
+mem_heap_extra_B=5035
+mem_stacks_B=0
+heap_tree=empty

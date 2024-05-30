@@ -56,6 +56,16 @@ Las métricas de evaluación utilizadas en el estudio son las siguientes:
   - Porcentaje de CPU utilizado
   - Máximo uso de RAM
   - Cantidad de veces que el proceso fue intercambiado hacia afuera de la RAM
+- callgrind:
+  - Ir: lecturas de caché (intrucciones ejecutadas)
+  - I1mr: I1 lecturas perdidas de caché (intrucciones que no se encuentran en la caché I1 pero se encuentran en la L2)
+  - I2mr: L2 lecturas perdidas de caché (intrucciones que no se encuentran en la caché I1 o L2 pero se encuentran en la RAM)
+  - Dr: D lecturas de caché (lecturas de memoria)
+  - D1mr: D1 lecturas perdidas de caché (Ubicación de datos no encontrada en D1, pero encontrada en L2)
+  - D2mr: L2 lecturas perdidas de datos caché (Ubicación de datos no encontrada en D1 o L2)
+  - Dw: D escrituras de caché (escrituras de memoria)
+  - D1mw: D1 escrituras perdidas de caché (Ubicación de datos no encontrada en D1, pero encontrada en L2)
+  - D2mw: L2 escrituras perdidas de caché (Ubicación de datos no encontrada en D1 o L2)
 - Registrados en ejecución:
   - Uso de CPU
   - Uso de memoria

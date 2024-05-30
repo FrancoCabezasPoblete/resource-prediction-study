@@ -1,20 +1,34 @@
 BootStrap: docker
-From: python:3.10-slim
+From: python:3.10-slim-bullseye
 
 %files
    ./benchmarks /benchmarks
    ./src /src
-   ./run_benchmarks.sh /run_benchmarks.sh
 %environment
-   export SA_INSTANCES=/benchmarks/simulated_annealing/instancias
+   export PATH="/opt/or-tools/bin:${PATH}"
+   export LD_LIBRARY_PATH="/opt/or-tools/lib:${LD_LIBRARY_PATH}"
 %post
-   apt-get update && apt-get install -y git ltrace strace make g++ valgrind sysstat time
-   apt-get autoremove -y && apt-get clean
+   apt-get update && apt-get install -y \
+      build-essential \
+      cmake \
+      zlib1g-dev \
+      lsb-release \
+      wget \
+      git \
+      ltrace \
+      strace \
+      valgrind \
+      time \
+      && apt-get autoremove -y && apt-get clean -y
+   wget https://github.com/google/or-tools/releases/download/v9.9/or-tools_amd64_debian-11_cpp_v9.9.3963.tar.gz -O /tmp/or-tools_amd64_debian-11_cpp_v9.9.3963.tar.gz \
+      && mkdir -p /opt/ortools \
+      && tar -xzvf /tmp/or-tools_amd64_debian-11_cpp_v9.9.3963.tar.gz -C /opt/ortools --strip-components=1 \
+      && rm /tmp/or-tools_amd64_debian-11_cpp_v9.9.3963.tar.gz
    pip install --no-cache-dir -r /src/requirements.txt
-   cd /benchmarks/simulated_annealing && make && cd /src
-   chmod +x /run_benchmarks.sh
+   mkdir -p /benchmarks/build && cd /benchmarks/build && cmake .. && make
+   chmod +x /benchmarks/run.sh
 %runscript
-   /run_benchmarks.sh
+   /benchmarks/run.sh
 
 %labels
    Author Franco Cabezas
