@@ -1,0 +1,12 @@
+Por Nodo:
+savio | Intel Xeon E5-2670v
+savio2 | Intel Xeon E5-2670 v3 or Intel Xeon E5-2650 v4 or Intel Xeon E5-2680 v4
+savio3 | Intel Xeon Skylake 6130 @ 2.1 GHz or Intel Xeon Skylake 6230 @ 2.1 GHz
+
+Por core:
+savio2_htc | Intel Xeon E5-2643 v3
+savio2_gpu | Intel Xeon E5-2623 v3
+savio2_knl | Intel Xeon Phi 7210
+savio3_gpu | Intel Xeon Silver 4208 @ 2.1 GHz or Intel Xeon E5-2623 v3 @ 3.0 GHz (QoS: v100_gpu3_normal & A40_gpu_normal)
+savio4_htc | Intel Xeon Gold 6330 @ 2.0 GHz
+savio4_gpu | Intel Xeon Gold 6326 @ 2.9 GHz

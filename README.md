@@ -8,8 +8,9 @@ Para ello, se ha utilizado un conjunto de datos de trazas de ejecución de conte
 
 ## Benchmarks
 Los benchmarks utilizados en el estudio son los siguientes:
-- Simulated Annealing
-- SQL Join
+- Knapsack Problem
+- Travelling Salesman Problem
+- K-Queens Problem
 - Matrix Multiplication
 
 ## Dependencias
@@ -23,7 +24,7 @@ apptainer build new_container.sif apptainer.def
 
 ### Ejecución de benchmarks
 ```bash
-apptainer run new_container.sif
+apptainer run -B <host_results_dir>:/results new_container.sif
 ```
 
 ## Docker
@@ -34,18 +35,8 @@ docker build -t new_container .
 
 ### Ejecución de benchmarks
 ```bash
-docker run -it -v ./results:/results new_container
+docker run -it -v <host_results_dir>:/results new_container
 ```
-
-## Descripción de los benchmarks
-### Simulated Annealing
-Resuelve el problema *Bus Evacuation Problem* (BEP) usando el algoritmo de *Simulated Annealing*, dado una instancia del problema.
-
-### SQL Join
-Realiza una operación de *join* entre dos tablas de una base de datos SQL, dado un conjunto de parámetros de entrada.
-
-### Matrix Multiplication
-Realiza la multiplicación de dos matrices cuadradas de tamaño *n x n*, dado un valor de *n*.
 
 ## Métricas de evaluación
 Las métricas de evaluación utilizadas en el estudio son las siguientes:
@@ -77,3 +68,39 @@ Además, se recopila la información disponible del sistema como:
 - Tamaño de cache L2 de CPU
 - Tamaño de cache L3 de CPU
 - Tamaño total de RAM
+
+## Control SAVIO
+Para ejecutar los benchmarks en el clúster de la Universidad de California, Berkeley, se ha utilizado el sistema de control de trabajos SAVIO.
+
+Ver cuentas y particiones disponibles:
+```bash
+acctmgr -p show associations user=<username>
+```
+
+Correr Apptainer en SAVIO via Slurm:
+1. Crear un archivo de trabajo Slurm
+```bash
+# !/bin/bash
+# Job name:
+#SBATCH --job-name=resource_prediction_study_usm
+#
+# Account:
+#SBATCH --account=fc_neuronident
+#
+# Partition:
+#SBATCH --partition=partition_name
+#
+# Wall clock limit:
+#SBATCH --time=00:15:00
+#
+## Command(s) to run:
+apptainer run -B /global/home/users/francoale2010/resource-prediction-study/results:/results /global/home/users/francoale2010/resource-prediction-study/mycontainer.sif 
+```
+2. Enviar el trabajo a la cola de Slurm
+```bash
+sbatch job.sh
+```
+3. Ver el estado del trabajo
+```bash
+squeue -j <JOB_ID>
+```

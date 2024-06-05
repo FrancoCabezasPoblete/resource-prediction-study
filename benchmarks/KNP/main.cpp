@@ -3,64 +3,64 @@
 #include <cstdint>
 #include <iterator>
 #include <numeric>
+#include <iostream>
+#include <fstream>
+#include <string>
 #include <sstream>
 #include <vector>
 
 #include "ortools/algorithms/knapsack_solver.h"
 
 namespace operations_research {
-void RunKnapsackExample() {
+void RunKnapsackExample(const std::string& filename) {
   // Instantiate the solver.
   KnapsackSolver solver(
-      KnapsackSolver::KNAPSACK_MULTIDIMENSION_BRANCH_AND_BOUND_SOLVER,
-      "KnapsackExample");
+    KnapsackSolver::KNAPSACK_MULTIDIMENSION_BRANCH_AND_BOUND_SOLVER,
+    "KnapsackExample");
+  
+  std::ifstream file(filename);
+  if (!file) {
+    std::cerr << "No se pudo abrir el archivo." << std::endl;
+    return;
+  }
+  std::string line;
+  std::vector<int64_t> values;
+  std::vector<std::vector<int64_t>> weights(1);
+  std::vector<int64_t> capacities;
   // knapPI_11_20_1000_100
-  std::vector<int64_t> values = {
-      384,
-      57,
-      768,
-      399,
-      228,
-      640,
-      456,
-      399,
-      256,
-      342,
-      1152,
-      57,
-      171,
-      399,
-      384,
-      896,
-      285,
-      513,
-      342,
-      171};
+  while (std::getline(file, line)) {
+    if (line.rfind("z ", 0) == 0) {
+      std::istringstream iss(line.substr(2));
+      int64_t capacity;
+      iss >> capacity;
+      capacities.push_back(capacity);
+      continue;
+    }
 
-  std::vector<std::vector<int64_t>> weights = {{
-      183,
-      178,
-      366,
-      1246,
-      712,
-      305,
-      1424,
-      1246,
-      122,
-      1068,
-      549,
-      178,
-      534,
-      1246,
-      183,
-      427,
-      890,
-      1602,
-      1068,
-      534}};
+    if (line.find("knapPI") != std::string::npos || line.find("n ") != std::string::npos || 
+      line.find("c ") != std::string::npos || line.find("time ") != std::string::npos) {
+      continue;
+    }
 
-  std::vector<int64_t> capacities = {8242};
+    std::istringstream iss(line);
+    std::string part;
+    int counter = 0;
+    int64_t value, weight;
 
+    while (std::getline(iss, part, ',')) {
+      int64_t number = std::stoll(part);
+      if (counter == 1) {
+        value = number;
+      } else if (counter == 2) {
+        weight = number;
+      }
+      counter++;
+    }
+
+    values.push_back(value);
+    weights[0].push_back(weight);
+  }
+  
   solver.Init(values, weights, capacities);
   int64_t computed_value = solver.Solve();
 
@@ -95,6 +95,10 @@ void RunKnapsackExample() {
 }  // namespace operations_research
 
 int main(int argc, char** argv) {
-  operations_research::RunKnapsackExample();
+  if (argc != 2) {
+    std::cerr << "Use: " << argv[0] << " <filename>" << std::endl;
+    return EXIT_FAILURE;
+  }
+  operations_research::RunKnapsackExample(argv[1]);
   return EXIT_SUCCESS;
 }

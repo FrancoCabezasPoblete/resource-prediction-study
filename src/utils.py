@@ -25,7 +25,6 @@ def memory_and_cpu_usage(command, max_time, base=2):
     ps_process = psutil.Process(process.pid)
 
     intervals = np.logspace(0, np.log2(max_time), num=100, base=base)
-
     start_time = time.time()
     try:
         for interval in intervals:
