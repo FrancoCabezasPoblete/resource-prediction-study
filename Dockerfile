@@ -2,7 +2,7 @@ FROM python:3.10-slim-bullseye
 
 COPY ./benchmarks /benchmarks
 COPY ./src /src
-COPY ./instances/hardinstances_pisinger /instances/hardinstances_pisinger
+COPY ./instances /instances
 
 RUN apt-get update && apt-get install -y \
     build-essential \
