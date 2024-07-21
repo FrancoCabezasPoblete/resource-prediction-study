@@ -120,7 +120,8 @@ void Tsp(const std::string& filename) {
     // Setting first solution heuristic.
     RoutingSearchParameters searchParameters = DefaultRoutingSearchParameters();
     searchParameters.set_first_solution_strategy(
-        FirstSolutionStrategy::PATH_CHEAPEST_ARC
+        FirstSolutionStrategy::AUTOMATIC
+        //FirstSolutionStrategy::PATH_CHEAPEST_ARC
     );
 
     // Solve the problem.

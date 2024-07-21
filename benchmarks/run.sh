@@ -1,11 +1,90 @@
 #!/bin/bash
 python /src/main.py KNP --test /benchmarks/build/knp /instances/hardinstances_pisinger/knapPI_14_2000_1000_1.txt
 python /src/main.py TSP --test /benchmarks/build/tsp /instances/TSPLIB95/rat783.tsp
-python /src/main.py N_Queens --test /benchmarks/build/n_queens 14
-python /src/main.py MATRIX_MULT --test python /benchmarks/MATRIX_MULT/main.py 10000
 python /src/main.py TSP2 --test /benchmarks/build/tsp /instances/TSPLIB95/u1060.tsp
 python /src/main.py TSP3 --test /benchmarks/build/tsp /instances/TSPLIB95/u1817.tsp
 python /src/main.py TSP4 --test /benchmarks/build/tsp /instances/TSPLIB95/u2319.tsp
-python /src/main.py --test N_Queens2 /benchmarks/build/n_queens 15
-python /src/main.py --test MATRIX_MULT2 python /benchmarks/MATRIX_MULT/main.py 15000
+# TSP<filename>
+python /src/main.py TSPa280 --test /benchmarks/build/tsp /instances/TSPLIB95/a280.tsp
+python /src/main.py TSPberlin52 --test /benchmarks/build/tsp /instances/TSPLIB95/berlin52.tsp
+python /src/main.py TSPbier127 --test /benchmarks/build/tsp /instances/TSPLIB95/bier127.tsp
+python /src/main.py TSPbrd14051 --test /benchmarks/build/tsp /instances/TSPLIB95/brd14051.tsp
+python /src/main.py TSPch130 --test /benchmarks/build/tsp /instances/TSPLIB95/ch130.tsp
+python /src/main.py TSPch150 --test /benchmarks/build/tsp /instances/TSPLIB95/ch150.tsp
+python /src/main.py TSPd198 --test /benchmarks/build/tsp /instances/TSPLIB95/d198.tsp
+python /src/main.py TSPd493 --test /benchmarks/build/tsp /instances/TSPLIB95/d493.tsp
+python /src/main.py TSPd657 --test /benchmarks/build/tsp /instances/TSPLIB95/d657.tsp
+python /src/main.py TSPd1291 --test /benchmarks/build/tsp /instances/TSPLIB95/d1291.tsp
+python /src/main.py TSPd1655 --test /benchmarks/build/tsp /instances/TSPLIB95/d1655.tsp
+python /src/main.py TSPd2103 --test /benchmarks/build/tsp /instances/TSPLIB95/d2103.tsp
+python /src/main.py TSPd15112 --test /benchmarks/build/tsp /instances/TSPLIB95/d15112.tsp
+python /src/main.py TSPd18512 --test /benchmarks/build/tsp /instances/TSPLIB95/d18512.tsp
+python /src/main.py TSPeli51 --test /benchmarks/build/tsp /instances/TSPLIB95/eli51.tsp
+python /src/main.py TSPeli76 --test /benchmarks/build/tsp /instances/TSPLIB95/eli76.tsp
+python /src/main.py TSPeli101 --test /benchmarks/build/tsp /instances/TSPLIB95/eli101.tsp
+python /src/main.py TSPfl417 --test /benchmarks/build/tsp /instances/TSPLIB95/fl417.tsp
+python /src/main.py TSPfl1400 --test /benchmarks/build/tsp /instances/TSPLIB95/fl1400.tsp
+python /src/main.py TSPfl1577 --test /benchmarks/build/tsp /instances/TSPLIB95/fl1577.tsp
+python /src/main.py TSPfl3795 --test /benchmarks/build/tsp /instances/TSPLIB95/fl3795.tsp
+python /src/main.py TSPfnl4461 --test /benchmarks/build/tsp /instances/TSPLIB95/fnl4461.tsp
+python /src/main.py TSPgil262 --test /benchmarks/build/tsp /instances/TSPLIB95/gil262.tsp
+python /src/main.py TSPkroA100 --test /benchmarks/build/tsp /instances/TSPLIB95/kroA100.tsp
+python /src/main.py TSPkroA150 --test /benchmarks/build/tsp /instances/TSPLIB95/kroA150.tsp
+python /src/main.py TSPkroA200 --test /benchmarks/build/tsp /instances/TSPLIB95/kroA200.tsp
+python /src/main.py TSPkroB100 --test /benchmarks/build/tsp /instances/TSPLIB95/kroB100.tsp
+python /src/main.py TSPkroB150 --test /benchmarks/build/tsp /instances/TSPLIB95/kroB150.tsp
+python /src/main.py TSPkroB200 --test /benchmarks/build/tsp /instances/TSPLIB95/kroB200.tsp
+python /src/main.py TSPkroC100 --test /benchmarks/build/tsp /instances/TSPLIB95/kroC100.tsp
+python /src/main.py TSPkroD100 --test /benchmarks/build/tsp /instances/TSPLIB95/kroD100.tsp
+python /src/main.py TSPkroE100 --test /benchmarks/build/tsp /instances/TSPLIB95/kroE100.tsp
+python /src/main.py TSPlin105 --test /benchmarks/build/tsp /instances/TSPLIB95/lin105.tsp
+python /src/main.py TSPlin318 --test /benchmarks/build/tsp /instances/TSPLIB95/lin318.tsp
+python /src/main.py TSPlinhp318 --test /benchmarks/build/tsp /instances/TSPLIB95/linhp318.tsp
+python /src/main.py TSPnrw1379 --test /benchmarks/build/tsp /instances/TSPLIB95/nrw1379.tsp
+python /src/main.py TSPp654 --test /benchmarks/build/tsp /instances/TSPLIB95/p654.tsp
+python /src/main.py TSPpcb442 --test /benchmarks/build/tsp /instances/TSPLIB95/pcb442.tsp
+python /src/main.py TSPpcb1173 --test /benchmarks/build/tsp /instances/TSPLIB95/pcb1173.tsp
+python /src/main.py TSPpcb3038 --test /benchmarks/build/tsp /instances/TSPLIB95/pcb3038.tsp
+python /src/main.py TSPpr76 --test /benchmarks/build/tsp /instances/TSPLIB95/pr76.tsp
+python /src/main.py TSPpr107 --test /benchmarks/build/tsp /instances/TSPLIB95/pr107.tsp
+python /src/main.py TSPpr124 --test /benchmarks/build/tsp /instances/TSPLIB95/pr124.tsp
+python /src/main.py TSPpr136 --test /benchmarks/build/tsp /instances/TSPLIB95/pr136.tsp
+python /src/main.py TSPpr144 --test /benchmarks/build/tsp /instances/TSPLIB95/pr144.tsp
+python /src/main.py TSPpr152 --test /benchmarks/build/tsp /instances/TSPLIB95/pr152.tsp
+python /src/main.py TSPpr226 --test /benchmarks/build/tsp /instances/TSPLIB95/pr226.tsp
+python /src/main.py TSPpr264 --test /benchmarks/build/tsp /instances/TSPLIB95/pr264.tsp
+python /src/main.py TSPpr299 --test /benchmarks/build/tsp /instances/TSPLIB95/pr299.tsp
+python /src/main.py TSPpr439 --test /benchmarks/build/tsp /instances/TSPLIB95/pr439.tsp
+python /src/main.py TSPpr1002 --test /benchmarks/build/tsp /instances/TSPLIB95/pr1002.tsp
+python /src/main.py TSPpr2392 --test /benchmarks/build/tsp /instances/TSPLIB95/pr2392.tsp
+python /src/main.py TSPrat99 --test /benchmarks/build/tsp /instances/TSPLIB95/rat99.tsp
+python /src/main.py TSPrat195 --test /benchmarks/build/tsp /instances/TSPLIB95/rat195.tsp
+python /src/main.py TSPrat575 --test /benchmarks/build/tsp /instances/TSPLIB95/rat575.tsp
+python /src/main.py TSPrd100 --test /benchmarks/build/tsp /instances/TSPLIB95/rd100.tsp
+python /src/main.py TSPrd400 --test /benchmarks/build/tsp /instances/TSPLIB95/rd400.tsp
+python /src/main.py TSPrl1304 --test /benchmarks/build/tsp /instances/TSPLIB95/rl1304.tsp
+python /src/main.py TSPrl1323 --test /benchmarks/build/tsp /instances/TSPLIB95/rl1323.tsp
+python /src/main.py TSPrl1889 --test /benchmarks/build/tsp /instances/TSPLIB95/rl1889.tsp
+python /src/main.py TSPrl5915 --test /benchmarks/build/tsp /instances/TSPLIB95/rl5915.tsp
+python /src/main.py TSPrl5934 --test /benchmarks/build/tsp /instances/TSPLIB95/rl5934.tsp
+python /src/main.py TSPrl11849 --test /benchmarks/build/tsp /instances/TSPLIB95/rl11849.tsp
+python /src/main.py TSPst70 --test /benchmarks/build/tsp /instances/TSPLIB95/st70.tsp
+python /src/main.py TSPts225 --test /benchmarks/build/tsp /instances/TSPLIB95/ts225.tsp
+python /src/main.py TSPtsp225 --test /benchmarks/build/tsp /instances/TSPLIB95/tsp225.tsp
+python /src/main.py TSPu159 --test /benchmarks/build/tsp /instances/TSPLIB95/u159.tsp
+python /src/main.py TSPu574 --test /benchmarks/build/tsp /instances/TSPLIB95/u574.tsp
+python /src/main.py TSPu724 --test /benchmarks/build/tsp /instances/TSPLIB95/u724.tsp
+python /src/main.py TSPu1432 --test /benchmarks/build/tsp /instances/TSPLIB95/u1432.tsp
+python /src/main.py TSPu2152 --test /benchmarks/build/tsp /instances/TSPLIB95/u2152.tsp
+python /src/main.py TSPusa13509 --test /benchmarks/build/tsp /instances/TSPLIB95/usa13509.tsp
+python /src/main.py TSPvm1084 --test /benchmarks/build/tsp /instances/TSPLIB95/vm1084.tsp
+python /src/main.py TSPvm1748 --test /benchmarks/build/tsp /instances/TSPLIB95/vm1748.tsp
+python /src/main.py N_Queens --test /benchmarks/build/n_queens 14
+python /src/main.py N_Queens2 --test /benchmarks/build/n_queens 15
+python /src/main.py N_Queens3 --test /benchmarks/build/n_queens 16
+python /src/main.py N_Queens4 --test /benchmarks/build/n_queens 13
+python /src/main.py MATRIX_MULT --test python /benchmarks/MATRIX_MULT/main.py 10000
+python /src/main.py MATRIX_MULT2 --test python /benchmarks/MATRIX_MULT/main.py 15000
 python /src/main.py MATRIX_MULT3 --test python /benchmarks/MATRIX_MULT/main.py 17500
+python /src/main.py MATRIX_MULT4 --test python /benchmarks/MATRIX_MULT/main.py 18000
+python /src/main.py MATRIX_MULT5 --test python /benchmarks/MATRIX_MULT/main.py 12500
