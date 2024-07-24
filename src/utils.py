@@ -47,13 +47,25 @@ def memory_and_cpu_usage(command, max_time, base=2):
 def test_execution(command):
     process = subprocess.Popen([*command], text=True)
     # Check if the execution don´t use all the memory
+    begin = time.time()
     while process.poll() is None:
         memory_usage = psutil.virtual_memory().percent
         if memory_usage > 95:
             process.terminate()
             print(f"Memory usage is {memory_usage}%. The process was terminated.")
+            print(command)
             return False
-        time.sleep(5)
+        time.sleep(0.01)
+        if time.time() - begin > 60*15:
+            process.terminate()
+            print("The process was terminated because it took too long.")
+            print(command)
+            return False
+    print(time.time() - begin)
+    if time.time() - begin < 0.1:
+        print("The process was too fast.")
+        print(command)
+        return False
     return True
 
 def execution_time(command, iterations=1):

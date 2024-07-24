@@ -9,7 +9,7 @@
 #SBATCH --partition=partition_name
 #
 # Wall clock limit:
-#SBATCH --time=00:15:00
+#SBATCH --time=05:00:00
 #
 ## Command(s) to run:
 apptainer run -B /global/home/users/francoale2010/results/<partition>:/results /global/home/users/francoale2010/mycontainer.sif
