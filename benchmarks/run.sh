@@ -1,5 +1,5 @@
 #!/bin/bash
-# python /src/main.py KNP --test /benchmarks/build/knp /instances/hardinstances_pisinger/knapPI_14_2000_1000_1.txt
+python /src/main.py KNP --test /benchmarks/build/knp /instances/hardinstances_pisinger/knapPI_14_2000_1000_1.txt
 # KNP<filename>
 python /src/main.py KNPS_FILE_1_500_1000 --test /benchmarks/build/knps_file /instances/smallcoeff_pisinger/knapPI_1_500_1000.csv
 python /src/main.py KNPS_FILE_1_500_10000 --test /benchmarks/build/knps_file /instances/smallcoeff_pisinger/knapPI_1_500_10000.csv
@@ -33,10 +33,10 @@ python /src/main.py KNPS_FILE_15_50_1000 --test /benchmarks/build/knps_file /ins
 python /src/main.py KNPS_FILE_16_50_1000 --test /benchmarks/build/knps_file /instances/hardinstances_pisinger/knapPI_16_50_1000.csv
 
 # TSP
-# python /src/main.py TSP --test /benchmarks/build/tsp /instances/TSPLIB95/rat783.tsp
-# python /src/main.py TSP2 --test /benchmarks/build/tsp /instances/TSPLIB95/u1060.tsp
-# python /src/main.py TSP3 --test /benchmarks/build/tsp /instances/TSPLIB95/u1817.tsp
-# python /src/main.py TSP4 --test /benchmarks/build/tsp /instances/TSPLIB95/u2319.tsp
+python /src/main.py TSP --test /benchmarks/build/tsp /instances/TSPLIB95/rat783.tsp
+python /src/main.py TSP2 --test /benchmarks/build/tsp /instances/TSPLIB95/u1060.tsp
+python /src/main.py TSP3 --test /benchmarks/build/tsp /instances/TSPLIB95/u1817.tsp
+python /src/main.py TSP4 --test /benchmarks/build/tsp /instances/TSPLIB95/u2319.tsp
 # TSP<filename>
 python /src/main.py TSPd198 --test /benchmarks/build/tsp /instances/TSPLIB95/d198.tsp
 python /src/main.py TSPd493 --test /benchmarks/build/tsp /instances/TSPLIB95/d493.tsp
@@ -89,8 +89,8 @@ python /src/main.py TSPusa13509 --test /benchmarks/build/tsp /instances/TSPLIB95
 python /src/main.py TSPvm1084 --test /benchmarks/build/tsp /instances/TSPLIB95/vm1084.tsp
 python /src/main.py TSPvm1748 --test /benchmarks/build/tsp /instances/TSPLIB95/vm1748.tsp
 # N_Queens
-# python /src/main.py N_Queens --test /benchmarks/build/n_queens 14
-# python /src/main.py N_Queens2 --test /benchmarks/build/n_queens 15
+python /src/main.py N_Queens --test /benchmarks/build/n_queens 14
+python /src/main.py N_Queens2 --test /benchmarks/build/n_queens 15
 python /src/main.py N_Queens3 --test /benchmarks/build/n_queens 13
 # MATRIX_MULT_ST
 python /src/main.py MATRIX_MULT_ST1 --test /benchmarks/build/matrix_mult_st 1000
