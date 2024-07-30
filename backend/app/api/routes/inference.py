@@ -1,10 +1,9 @@
 from typing import Any
 
-from fastapi import APIRouter, HTTPException
-
+from app.api.deps import predict_tabnet, predict_transformer, predict_xgboost
 from app.config import MODELS_PATH
 from app.models import InferenceIn, InferenceOut
-from app.api.deps import predict_transformer, predict_xgboost, predict_tabnet
+from fastapi import APIRouter, HTTPException
 
 router = APIRouter()
 

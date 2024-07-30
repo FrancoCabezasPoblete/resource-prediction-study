@@ -1,5 +1,5 @@
-from fastapi import APIRouter
 from app.api.routes import inference
+from fastapi import APIRouter
 
 api_router = APIRouter()
 

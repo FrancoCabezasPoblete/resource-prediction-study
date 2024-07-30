@@ -1,8 +1,7 @@
-from fastapi import FastAPI
-from starlette.middleware.cors import CORSMiddleware
-
 from app.api.main import api_router
 from app.config import API_V1_STR, BACKEND_CORS_ORIGINS
+from fastapi import FastAPI
+from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="Resource Prediction API",

@@ -1,6 +1,0 @@
-total_time,total_cpu_usage,max_ram_usage,brand_raw,vendor_id_raw,arch,count,l2_cache_size,l3_cache_size,hz_actual_friendly,hz_advertised_friendly,l2_cache_line_size,l2_cache_associativity,benchmark
-88.84,99%,1467196,Intel(R) Xeon Phi(TM) CPU 7210 @ 1.30GHz,GenuineIntel,X86_64,64,33554432,1048576,1.0000 GHz,1.3000 GHz,1024,8,KNP
-88.26,99%,1467912,Intel(R) Xeon Phi(TM) CPU 7210 @ 1.30GHz,GenuineIntel,X86_64,64,33554432,1048576,1.0000 GHz,1.3000 GHz,1024,8,KNP
-88.30,99%,1466048,Intel(R) Xeon Phi(TM) CPU 7210 @ 1.30GHz,GenuineIntel,X86_64,64,33554432,1048576,1.0000 GHz,1.3000 GHz,1024,8,KNP
-88.37,99%,1467792,Intel(R) Xeon Phi(TM) CPU 7210 @ 1.30GHz,GenuineIntel,X86_64,64,33554432,1048576,1.0000 GHz,1.3000 GHz,1024,8,KNP
-88.38,99%,1466980,Intel(R) Xeon Phi(TM) CPU 7210 @ 1.30GHz,GenuineIntel,X86_64,64,33554432,1048576,1.0000 GHz,1.3000 GHz,1024,8,KNP

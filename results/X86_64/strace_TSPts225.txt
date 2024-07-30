@@ -1,0 +1,140 @@
+execve("/benchmarks/build/tsp", ["/benchmarks/build/tsp", "/instances/TSPLIB95/ts225.tsp"], 0x7ffc3f2f0c88 /* 88 vars */) = 0
+brk(NULL)                               = 0x558217d55000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f79bc5cd000
+stat("/.singularity.d/libs", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+openat(AT_FDCWD, "/opt/ortools/lib/libortools.so.9", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\333S\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=44323512, ...}) = 0
+mmap(NULL, 37074448, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f79ba271000
+mmap(0x7f79ba777000, 26083328, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x506000) = 0x7f79ba777000
+mmap(0x7f79bc057000, 5111808, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1de6000) = 0x7f79bc057000
+mmap(0x7f79bc537000, 561152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22c5000) = 0x7f79bc537000
+mmap(0x7f79bc5c0000, 50704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f79bc5c0000
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=16395, ...}) = 0
+mmap(NULL, 16395, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f79ba26c000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\240\t\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1870824, ...}) = 0
+mmap(NULL, 1886208, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f79ba09f000
+mmap(0x7f79ba135000, 901120, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x96000) = 0x7f79ba135000
+mmap(0x7f79ba211000, 303104, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x172000) = 0x7f79ba211000
+mmap(0x7f79ba25b000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bb000) = 0x7f79ba25b000
+mmap(0x7f79ba269000, 10240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f79ba269000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\322\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1321344, ...}) = 0
+mmap(NULL, 1323280, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f79b9f5b000
+mmap(0x7f79b9f68000, 630784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7f79b9f68000
+mmap(0x7f79ba002000, 634880, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa7000) = 0x7f79ba002000
+mmap(0x7f79ba09d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x141000) = 0x7f79ba09d000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0203\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=100736, ...}) = 0
+mmap(NULL, 103496, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f79b9f41000
+mmap(0x7f79b9f44000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f79b9f44000
+mmap(0x7f79b9f55000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14000) = 0x7f79b9f55000
+mmap(0x7f79b9f59000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f79b9f59000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@>\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1901536, ...}) = 0
+mmap(NULL, 1914496, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f79b9d6d000
+mmap(0x7f79b9d8f000, 1413120, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f79b9d8f000
+mmap(0x7f79b9ee8000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17b000) = 0x7f79b9ee8000
+mmap(0x7f79b9f37000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c9000) = 0x7f79b9f37000
+mmap(0x7f79b9f3d000, 13952, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f79b9f3d000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\21\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=18688, ...}) = 0
+mmap(NULL, 20752, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f79b9d67000
+mmap(0x7f79b9d68000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f79b9d68000
+mmap(0x7f79b9d6a000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f79b9d6a000
+mmap(0x7f79b9d6b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f79b9d6b000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 l\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=149520, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f79b9d65000
+mmap(NULL, 136304, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f79b9d43000
+mmap(0x7f79b9d49000, 65536, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f79b9d49000
+mmap(0x7f79b9d59000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f79b9d59000
+mmap(0x7f79b9d5f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b000) = 0x7f79b9d5f000
+mmap(0x7f79b9d61000, 13424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f79b9d61000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f79b9d41000
+arch_prctl(ARCH_SET_FS, 0x7f79b9d41c40) = 0
+mprotect(0x7f79b9f37000, 16384, PROT_READ) = 0
+mprotect(0x7f79b9d5f000, 4096, PROT_READ) = 0
+mprotect(0x7f79b9d6b000, 4096, PROT_READ) = 0
+mprotect(0x7f79b9f59000, 4096, PROT_READ) = 0
+mprotect(0x7f79ba09d000, 4096, PROT_READ) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f79b9d3f000
+mprotect(0x7f79ba25b000, 45056, PROT_READ) = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f79b9d3c000
+mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f79b9d37000
+mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f79b9d2e000
+mprotect(0x7f79bc537000, 331776, PROT_READ) = 0
+mprotect(0x558213d7a000, 4096, PROT_READ) = 0
+mprotect(0x7f79bc5ff000, 4096, PROT_READ) = 0
+munmap(0x7f79ba26c000, 16395)           = 0
+set_tid_address(0x7f79b9d41f10)         = 446380
+set_robust_list(0x7f79b9d41f20, 24)     = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x7f79b9d49690, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7f79b9d56140}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7f79b9d49730, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f79b9d56140}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0x558217d55000
+brk(0x558217d76000)                     = 0x558217d76000
+brk(0x558217d97000)                     = 0x558217d97000
+futex(0x7f79ba2696bc, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7f79ba2696c8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/instances/TSPLIB95/ts225.tsp", O_RDONLY) = 3
+read(3, "NAME : ts225\nCOMMENT : 225-city "..., 8191) = 3485
+brk(0x558217dc8000)                     = 0x558217dc8000
+brk(0x558217e07000)                     = 0x558217e07000
+brk(0x558217e45000)                     = 0x558217e45000
+brk(0x558217e84000)                     = 0x558217e84000
+brk(0x558217ec2000)                     = 0x558217ec2000
+brk(0x558217f01000)                     = 0x558217f01000
+brk(0x558217f3f000)                     = 0x558217f3f000
+brk(0x558217f7e000)                     = 0x558217f7e000
+brk(0x558217fa0000)                     = 0x558217fa0000
+brk(0x558217fc2000)                     = 0x558217fc2000
+brk(0x558217fe3000)                     = 0x558217fe3000
+brk(0x558218004000)                     = 0x558218004000
+brk(0x558218025000)                     = 0x558218025000
+brk(0x558218046000)                     = 0x558218046000
+brk(0x558218067000)                     = 0x558218067000
+brk(0x558218088000)                     = 0x558218088000
+brk(0x5582180aa000)                     = 0x5582180aa000
+brk(0x5582180cb000)                     = 0x5582180cb000
+brk(0x5582180ec000)                     = 0x5582180ec000
+brk(0x55821810d000)                     = 0x55821810d000
+brk(0x55821812e000)                     = 0x55821812e000
+brk(0x55821814f000)                     = 0x55821814f000
+brk(0x558218170000)                     = 0x558218170000
+brk(0x558218192000)                     = 0x558218192000
+brk(0x5582181b4000)                     = 0x5582181b4000
+brk(0x5582181d5000)                     = 0x5582181d5000
+brk(0x5582181f6000)                     = 0x5582181f6000
+brk(0x558218217000)                     = 0x558218217000
+brk(0x55821823c000)                     = 0x55821823c000
+brk(0x55821825d000)                     = 0x55821825d000
+brk(0x55821827e000)                     = 0x55821827e000
+brk(0x55821829f000)                     = 0x55821829f000
+brk(0x5582182c0000)                     = 0x5582182c0000
+brk(0x5582182e1000)                     = 0x5582182e1000
+brk(0x5582182dd000)                     = 0x5582182dd000
+brk(0x5582182dc000)                     = 0x5582182dc000
+brk(0x5582182db000)                     = 0x5582182db000
+brk(0x5582182da000)                     = 0x5582182da000
+brk(0x5582182d5000)                     = 0x5582182d5000
+close(3)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
