@@ -9,7 +9,7 @@
 #SBATCH --partition=savio3
 #
 # Wall clock limit:
-#SBATCH --time=02:00:00
+#SBATCH --time=07:00:00
 #
 ## Command(s) to run:
 apptainer run -B /global/home/users/francoale2010/results/savio3:/results /global/home/users/francoale2010/mycontainer_savio3.sif

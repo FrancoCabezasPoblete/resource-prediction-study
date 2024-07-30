@@ -11,7 +11,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=4
 # Wall clock limit:
-#SBATCH --time=01:00:00
+#SBATCH --time=06:00:00
 #
 ## Command(s) to run:
 apptainer run -B /global/home/users/francoale2010/results/savio2_htc:/results /global/home/users/francoale2010/mycontainer_savio2.sif
