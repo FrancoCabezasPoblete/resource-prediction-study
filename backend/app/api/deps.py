@@ -5,12 +5,16 @@ from app.config import MODELS_PATH
 from joblib import load
 from pytorch_tabnet.tab_model import TabNetRegressor
 
+DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
 x_scaler = load("/app/model/x_scaler.joblib")
 y_scaler = load("/app/model/y_scaler.joblib")
 
-
 def inv_scaling_pyt(y, y_scaler):
-    return y_scaler.inverse_transform(y.cpu().numpy().reshape(-1, 1))
+	if DEVICE.type == 'cuda':
+		return y_scaler.inverse_transform(y.cpu().numpy().reshape(-1, 1))
+	else:
+		return y_scaler.inverse_transform(y.numpy().reshape(-1, 1))
 
 
 def inv_scaling(y, y_scaler):
