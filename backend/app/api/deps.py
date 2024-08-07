@@ -34,10 +34,12 @@ def predict_feedforward(data: list[list[float]]):
 
 def predict_mc_dropout(data: list[list[float]]):
     model = torch.load(f"/app/model/{MODELS_PATH["mc_dropout"]}")
+    data = np.array(data)
+    data[:, 0] = np.log1p(data[:, 0])
     scaled_data = x_scaler.transform(data)
     tensor_data = torch.tensor(scaled_data, dtype=torch.float32)
     predictions = model.predict(tensor_data)
-    predictions = inv_scaling_pyt(predictions, y_scaler)
+    predictions = np.expm1(inv_scaling_pyt(predictions, y_scaler))
     return [float(p.items()) for p in predictions]
 
 
@@ -45,10 +47,12 @@ def predict_xgboost(data: list[list[float]]):
     model = xgb.Booster()
     scaler = load("/app/model/scaler_st.joblib")
     model.load_model(f"/app/model/{MODELS_PATH['xgboost']}")
+    data = np.array(data)
+    data[:, 0] = np.log1p(data[:, 0])
     scaled_data = scaler.transform(data)
     dmatrix = xgb.DMatrix(scaled_data)
     predictions = model.predict(dmatrix)
-    predictions = inv_scaling(predictions, y_scaler)
+    predictions = np.expm1(inv_scaling(predictions, y_scaler))
     return [float(p.items()) for p in predictions]
 
 
