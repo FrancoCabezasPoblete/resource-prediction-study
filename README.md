@@ -104,5 +104,3 @@ sbatch job.sh
 ```bash
 squeue -j <JOB_ID>
 ```
-
-TODO: Obtener datos de nodos faltantes (indicando el numero de nodo)
